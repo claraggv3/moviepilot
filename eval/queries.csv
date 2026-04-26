@@ -1,0 +1,42 @@
+category,query
+named_director,David Fincher movies
+named_director,Christopher Nolan films
+named_director,Bong Joon-ho films
+named_director,Quentin Tarantino movies
+named_actor,movies with Tom Hanks
+named_actor,something with Cate Blanchett
+named_actor,movies with Meryl Streep
+named_actor,show with Pedro Pascal
+mood,something light and funny to cheer me up
+mood,I need a good cry, what should I watch?
+mood,something intense that'll keep me on edge
+mood,something comforting to watch when I'm sick
+mood,I want something mind-bending
+topic,movies about artificial intelligence
+topic,a film about grief and loss
+topic,survival in the wild
+topic,films about the financial crisis
+topic,documentaries about climate change
+country,Korean drama
+country,a good French film
+genre,spy thriller
+genre,romantic comedy
+complex,spy thriller with action by Martin Scorsese
+complex,Christopher Nolan mind-bending thriller
+complex,Tom Hanks drama about friendship
+complex,Korean crime thriller like Parasite
+complex,80s horror film
+complex,French romantic comedy
+complex,documentary about nature and wildlife
+complex,something like Inception but shorter
+audience,something to watch with my 8-year-old
+audience,a movie for date night
+audience,something I can have on in the background
+era,classic films from the 80s
+era,good comedies from the 90s
+format,a long series I can binge this weekend
+format,just a mini-series, nothing too long
+similarity,if I liked Breaking Bad, what should I watch?
+similarity,movies in the same vein as The Godfather
+negative,a comedy that isn't crude or raunchy
+negative,action movie but nothing too gory

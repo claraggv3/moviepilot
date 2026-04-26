@@ -1,0 +1,411 @@
+label,category,query,rank,score,title,year,type,genres,directors,actors,imdb_score,age_certification
+hyde,named_director,David Fincher movies,1,0.7595,Se7en,1995,MOVIE,"crime, thriller, drama",David Fincher,"Brad Pitt, Morgan Freeman, Gwyneth Paltrow, Kevin Spacey, R. Lee Ermey",8.6,R
+hyde,named_director,David Fincher movies,2,0.7388,Mank,2020,MOVIE,"comedy, drama",David Fincher,"Gary Oldman, Amanda Seyfried, Lily Collins, Arliss Howard, Tom Pelphrey",6.8,R
+hyde,named_director,David Fincher movies,3,0.7419,Triple Frontier,2019,MOVIE,"thriller, action, crime, drama",J.C. Chandor,"Ben Affleck, Oscar Isaac, Charlie Hunnam, Garrett Hedlund, Pedro Pascal",6.4,R
+hyde,named_director,David Fincher movies,4,0.7415,Margin Call,2011,MOVIE,"thriller, drama",J.C. Chandor,"Kevin Spacey, Zachary Quinto, Simon Baker, Paul Bettany, Ashley Williams",7.1,R
+hyde,named_director,David Fincher movies,5,0.7328,The Net,1995,MOVIE,"thriller, action, crime, drama",Irwin Winkler,"Sandra Bullock, Jeremy Northam, Dennis Miller, Wendy Gazelle, Ken Howard",5.9,PG-13
+hyde,named_director,David Fincher movies,6,0.7315,Windfall,2022,MOVIE,"crime, drama, thriller",Charlie McDowell,"Jason Segel, Lily Collins, Jesse Plemons, Omar Leyva",5.7,R
+hyde,named_director,David Fincher movies,7,0.7307,Black Mirror: Bandersnatch,2018,MOVIE,"drama, thriller, scifi, fantasy",David Slade,"Fionn Whitehead, Craig Parkinson, Alice Lowe, Will Poulter, Asim Chaudhry",7.1,R
+hyde,named_director,David Fincher movies,8,0.7302,21,2008,MOVIE,"crime, drama, history, thriller",Robert Luketic,"Jim Sturgess, Kevin Spacey, Kate Bosworth, Aaron Yoo, Liza Lapira",6.8,PG-13
+hyde,named_director,David Fincher movies,9,0.7262,Choose or Die,2022,MOVIE,"scifi, thriller, drama, horror",Toby Meakins,"Iola Evans, Asa Butterfield, Robert Englund, Angela Griffin, Ryan Gage",4.7,
+hyde,named_director,David Fincher movies,10,0.7257,Chaos,2005,MOVIE,"crime, drama, action, thriller, european",Tony Giglio,"Jason Statham, Ryan Phillippe, Wesley Snipes, Henry Czerny, Justine Waddell",6.4,R
+hyde,named_director,Christopher Nolan films,1,0.7751,Inception,2010,MOVIE,"action, scifi, music, thriller",Christopher Nolan,"Leonardo DiCaprio, Joseph Gordon-Levitt, Ken Watanabe, Tom Hardy, Elliot Page",8.8,PG-13
+hyde,named_director,Christopher Nolan films,2,0.7685,The Dark Knight Rises,2012,MOVIE,"thriller, action, drama, crime",Christopher Nolan,"Christian Bale, Michael Caine, Gary Oldman, Anne Hathaway, Tom Hardy",8.4,PG-13
+hyde,named_director,Christopher Nolan films,3,0.7453,Dunkirk,2017,MOVIE,"drama, war, action, thriller, history, european",Christopher Nolan,"Fionn Whitehead, Tom Hardy, Mark Rylance, Kenneth Branagh, Cillian Murphy",7.8,PG-13
+hyde,named_director,Christopher Nolan films,4,0.7539,Total Recall,2012,MOVIE,"scifi, thriller, action, crime",Len Wiseman,"Colin Farrell, Kate Beckinsale, Jessica Biel, Bryan Cranston, Bokeem Woodbine",6.2,PG-13
+hyde,named_director,Christopher Nolan films,5,0.7397,MindGamers,2015,MOVIE,"action, scifi, thriller, european",Andrew Goth,"Sam Neill, Tom Payne, Melia Kreiling, Julian Bleach, Antonia Campbell-Hughes",3.6,
+hyde,named_director,Christopher Nolan films,6,0.7328,King of Thieves,2018,MOVIE,"drama, crime, history",James Marsh,"Michael Caine, Jim Broadbent, Tom Courtenay, Charlie Cox, Paul Whitehouse",5.5,R
+hyde,named_director,Christopher Nolan films,7,0.7296,Hypnotic,2021,MOVIE,"thriller, horror, drama","Matt Angel, Suzanne Coote","Kate Siegel, Jason O'Mara, Dulé Hill, Lucie Guest, Jaime M. Callica",5.3,
+hyde,named_director,Christopher Nolan films,8,0.7293,Johnny Mnemonic,1995,MOVIE,"action, drama, scifi, thriller",Robert Longo,"Keanu Reeves, Dina Meyer, Takeshi Kitano, Ice-T, Dolph Lundgren",5.6,R
+hyde,named_director,Christopher Nolan films,9,0.7249,Chaos,2005,MOVIE,"crime, drama, action, thriller, european",Tony Giglio,"Jason Statham, Ryan Phillippe, Wesley Snipes, Henry Czerny, Justine Waddell",6.4,R
+hyde,named_director,Christopher Nolan films,10,0.7233,Deadly Illusions,2021,MOVIE,thriller,Anna Elizabeth James,"Kristin Davis, Dermot Mulroney, Shanola Hampton, Lora Martinez-Cunningham, Greer Grammer",,R
+hyde,named_director,Bong Joon-ho films,1,0.7409,Okja,2017,MOVIE,"scifi, fantasy, action, drama",Bong Joon-ho,"Ahn Seo-hyun, Tilda Swinton, Paul Dano, Jake Gyllenhaal, Lily Collins",7.3,PG-13
+hyde,named_director,Bong Joon-ho films,2,0.7156,Choose or Die,2022,MOVIE,"scifi, thriller, drama, horror",Toby Meakins,"Iola Evans, Asa Butterfield, Robert Englund, Angela Griffin, Ryan Gage",4.7,
+hyde,named_director,Bong Joon-ho films,3,0.7127,The Platform,2019,MOVIE,"scifi, thriller, horror, european",Galder Gaztelu-Urrutia,"Iván Massagué, Antonia San Juan, Zorion Eguileor, Emilio Buale, Alexandra Masangkay",7.0,
+hyde,named_director,Bong Joon-ho films,4,0.7047,Skylines,2020,MOVIE,"scifi, action",Liam O'Donnell,"Lindsey Morgan, Alexander Siddig, Rhona Mitra, Daniel Bernhardt, James Cosmo",4.7,R
+hyde,named_director,Bong Joon-ho films,5,0.7041,The Girl on the Train,2021,MOVIE,"drama, thriller, crime",Ribhu Dasgupta,"Parineeti Chopra, Aditi Rao Hydari, Kirti Kulhari, Tota Roy Chowdhury, Shamaun Ahmed",4.4,
+hyde,named_director,Bong Joon-ho films,6,0.7012,Two Distant Strangers,2021,MOVIE,drama,"Travon Free, Martin Desmond Roe","Joey Bada$$, Andrew Howard, Zaria, Mona Sishodia, Cameron Early",,R
+hyde,named_director,Bong Joon-ho films,7,0.6963,Level 16,2018,MOVIE,"scifi, thriller, drama, european",Danishka Esterhazy,"Katie Douglas, Celina Martin, Peter Outerbridge, Sara Canning, Alexis Whelan",6.0,
+hyde,named_director,Bong Joon-ho films,8,0.6957,ARQ,2016,MOVIE,"scifi, thriller, action",Tony Elliott,"Robbie Amell, Rachael Taylor, Gray Powell, Jacob Neayem, Shaun Benson",6.3,R
+hyde,named_director,Bong Joon-ho films,9,0.6948,Deidra & Laney Rob a Train,2017,MOVIE,"drama, comedy, crime",Sydney Freeland,"Ashleigh Murray, Rachel Crow, Tim Blake Nelson, David Sullivan, Danielle Nicolet",6.0,
+hyde,named_director,Bong Joon-ho films,10,0.692,Blade Runner 2049,2017,MOVIE,"scifi, action, drama, thriller",Denis Villeneuve,"Ryan Gosling, Harrison Ford, Ana de Armas, Sylvia Hoeks, Robin Wright",8.0,R
+hyde,named_director,Quentin Tarantino movies,1,0.7421,The Hateful Eight,2015,MOVIE,"thriller, western, drama, crime",Quentin Tarantino,"Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, Walton Goggins, Demián Bichir",7.8,R
+hyde,named_director,Quentin Tarantino movies,2,0.7368,Django Unchained,2012,MOVIE,"western, drama",Quentin Tarantino,"Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson",8.4,R
+hyde,named_director,Quentin Tarantino movies,3,0.7239,Django & Django,2021,MOVIE,documentation,,,6.9,
+hyde,named_director,Quentin Tarantino movies,4,0.7586,Chaos,2005,MOVIE,"crime, drama, action, thriller, european",Tony Giglio,"Jason Statham, Ryan Phillippe, Wesley Snipes, Henry Czerny, Justine Waddell",6.4,R
+hyde,named_director,Quentin Tarantino movies,5,0.7531,Cut Throat City,2020,MOVIE,"thriller, drama, action, crime",RZA,"Shameik Moore, Demetrius Shipp Jr., Denzel Whitaker, Keean Johnson, Kat Graham",4.8,R
+hyde,named_director,Quentin Tarantino movies,6,0.7495,The Car: Road to Revenge,2019,MOVIE,"action, horror, thriller, scifi",G.J. Echternkamp,"Grant Bowler, Kathleen Munroe, Martin Hancock, Micah Balfour, Burt Grinstead",4.0,
+hyde,named_director,Quentin Tarantino movies,7,0.7491,Triple Frontier,2019,MOVIE,"thriller, action, crime, drama",J.C. Chandor,"Ben Affleck, Oscar Isaac, Charlie Hunnam, Garrett Hedlund, Pedro Pascal",6.4,R
+hyde,named_director,Quentin Tarantino movies,8,0.7471,Tattoo of Revenge,2018,MOVIE,"comedy, romance, thriller",Julián Hernández,"Diana Lein, Irving Peña, Mónica del Carmen, Cesar Ramos, Giovanna Zacarías",4.9,R
+hyde,named_director,Quentin Tarantino movies,9,0.7449,Revenger,2018,MOVIE,"action, crime, thriller",Lee Seung-Won,"Bruce Khan, Park Hee-soon, Yoon Jin-seo, Kim In-kwon, Kim Na-yeon",5.7,NC-17
+hyde,named_director,Quentin Tarantino movies,10,0.7445,Nightcrawler,2014,MOVIE,"thriller, crime, drama",Dan Gilroy,"Jake Gyllenhaal, Rene Russo, Riz Ahmed, Bill Paxton, Kevin Rahm",7.8,R
+hyde,named_actor,movies with Tom Hanks,1,0.7553,Forrest Gump,1994,MOVIE,"drama, romance",Robert Zemeckis,"Tom Hanks, Robin Wright, Gary Sinise, Mykelti Williamson, Sally Field",8.8,PG-13
+hyde,named_actor,movies with Tom Hanks,2,0.7348,You've Got Mail,1998,MOVIE,"comedy, romance, drama",Nora Ephron,"Tom Hanks, Meg Ryan, Greg Kinnear, Parker Posey, Steve Zahn",6.7,PG
+hyde,named_actor,movies with Tom Hanks,3,0.7266,Road to Perdition,2002,MOVIE,"thriller, documentation, drama, crime",Sam Mendes,"Tom Hanks, Tyler Hoechlin, Paul Newman, Jude Law, Daniel Craig",7.7,R
+hyde,named_actor,movies with Tom Hanks,4,0.7238,The Terminal,2004,MOVIE,"drama, comedy, romance",Steven Spielberg,"Tom Hanks, Catherine Zeta-Jones, Stanley Tucci, Chi McBride, Diego Luna",7.4,PG-13
+hyde,named_actor,movies with Tom Hanks,5,0.7117,Catch Me If You Can,2002,MOVIE,"drama, crime",Steven Spielberg,"Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen, Nathalie Baye",8.1,PG-13
+hyde,named_actor,movies with Tom Hanks,6,0.7011,Quincy,2018,MOVIE,"music, documentation","Alan Hicks, Rashida Jones","Quincy Jones, Rashida Jones, Tom Hanks, Oprah Winfrey, John Legend",7.6,
+hyde,named_actor,movies with Tom Hanks,7,0.698,Inventing David Geffen,2012,MOVIE,documentation,Susan Lacy,"David Geffen, Nora Ephron, Tom Hanks, Elton John, Mike Nichols",,
+hyde,named_actor,movies with Tom Hanks,8,0.7196,The Fundamentals of Caring,2016,MOVIE,"comedy, drama",Rob Burnett,"Paul Rudd, Craig Roberts, Selena Gomez, Jennifer Ehle, Megan Ferguson",7.3,R
+hyde,named_actor,movies with Tom Hanks,9,0.7178,A Stand Worthy of Men,2021,MOVIE,"drama, comedy",,,7.2,
+hyde,named_actor,movies with Tom Hanks,10,0.7158,The Land of Steady Habits,2018,MOVIE,"drama, comedy",Nicole Holofcener,"Ben Mendelsohn, Edie Falco, Thomas Mann, Elizabeth Marvel, Connie Britton",6.2,
+hyde,named_actor,something with Cate Blanchett,1,0.7289,This Changes Everything,2019,MOVIE,documentation,Tom Donahue,"Rashida Jones, Chloë Grace Moretz, Natalie Portman, Jessica Chastain, Cate Blanchett",7.6,PG
+hyde,named_actor,something with Cate Blanchett,2,0.7223,Blue Jasmine,2013,MOVIE,"drama, comedy, european",Woody Allen,"Alec Baldwin, Cate Blanchett, Louis C.K., Bobby Cannavale, Andrew Dice Clay",7.3,PG-13
+hyde,named_actor,something with Cate Blanchett,3,0.7309,Big Eyes,2014,MOVIE,"drama, documentation, romance, crime",Tim Burton,"Amy Adams, Christoph Waltz, Danny Huston, Jon Polito, Krysten Ritter",7.2,PG-13
+hyde,named_actor,something with Cate Blanchett,4,0.7275,Behind the Scenes With Jane Campion,2022,MOVIE,documentation,"Prisca Bouchet, Nick Mayow","Jane Campion, Thomas Savage, Jesse Plemons, Kirsten Dunst, Benedict Cumberbatch",,
+hyde,named_actor,something with Cate Blanchett,5,0.7262,Creating The Queen's Gambit,2021,MOVIE,documentation,,"Anya Taylor-Joy, Scott Frank, Bruce Pandolfini, Allan Scott, Thomas Brodie-Sangster",6.9,PG-13
+hyde,named_actor,something with Cate Blanchett,6,0.7227,Collateral Beauty,2016,MOVIE,"romance, drama",David Frankel,"Will Smith, Edward Norton, Kate Winslet, Michael Peña, Helen Mirren",6.7,PG-13
+hyde,named_actor,something with Cate Blanchett,7,0.7223,Blanche Gardin: I Talk to Myself,2017,MOVIE,"comedy, european",Maïa Sandoz,Blanche Gardin,7.9,
+hyde,named_actor,something with Cate Blanchett,8,0.7123,By the Sea,2015,MOVIE,"drama, romance, european",Angelina Jolie,"Angelina Jolie, Brad Pitt, Mélanie Laurent, Melvil Poupaud, Niels Arestrup",5.3,R
+hyde,named_actor,something with Cate Blanchett,9,0.7097,Made You Look: A True Story About Fake Art,2020,MOVIE,"documentation, crime",Barry Avrich,,7.0,
+hyde,named_actor,something with Cate Blanchett,10,0.7084,Untold: Caitlyn Jenner,2021,MOVIE,"documentation, sport",Crystal Moselle,Caitlyn Jenner,6.4,R
+hyde,named_actor,movies with Meryl Streep,1,0.7429,The Laundromat,2019,MOVIE,"drama, history, comedy, crime",Steven Soderbergh,"Meryl Streep, Gary Oldman, Antonio Banderas, Jeffrey Wright, Melissa Rauch",6.3,R
+hyde,named_actor,movies with Meryl Streep,2,0.7391,Suffragette,2015,MOVIE,"drama, history",Sarah Gavron,"Carey Mulligan, Helena Bonham Carter, Brendan Gleeson, Anne-Marie Duff, Meryl Streep",6.9,PG-13
+hyde,named_actor,movies with Meryl Streep,3,0.7264,The Prom,2020,MOVIE,"comedy, drama, music, romance",Ryan Murphy,"Meryl Streep, James Corden, Nicole Kidman, Kerry Washington, Keegan-Michael Key",5.9,PG-13
+hyde,named_actor,movies with Meryl Streep,4,0.6943,The Giver,2014,MOVIE,"drama, scifi, thriller, romance",Phillip Noyce,"Brenton Thwaites, Odeya Rush, Jeff Bridges, Meryl Streep, Katie Holmes",6.4,PG-13
+hyde,named_actor,movies with Meryl Streep,5,0.7297,Five Came Back,2017,SHOW,"war, documentation, history",Laurent Bouzereau,"Meryl Streep, Steven Spielberg, Lawrence Kasdan, Francis Ford Coppola, Paul Greengrass",8.3,TV-MA
+hyde,named_actor,movies with Meryl Streep,6,0.7155,"Strip Down, Rise Up",2021,MOVIE,documentation,Michèle Ohayon,"Sheila Kelley, Jenyne Butterfly, Elizabeth Mihelich, Amy Bond",5.2,R
+hyde,named_actor,movies with Meryl Streep,7,0.7153,Molly's Game,2017,MOVIE,"drama, crime, sport",Aaron Sorkin,"Jessica Chastain, Idris Elba, Kevin Costner, Michael Cera, Jeremy Strong",7.4,R
+hyde,named_actor,movies with Meryl Streep,8,0.7061,The Martha Mitchell Effect,2022,MOVIE,documentation,"Anne Alvergue, Debra McClutchy","Richard Nixon, Connie Chung, Dwight L. Chapin, John Dean, Sally Quinn",,PG
+hyde,named_actor,movies with Meryl Streep,9,0.705,9to5: The Story of A Movement,2020,MOVIE,"documentation, history","Julia Reichert, Steven Bognar","Jane Fonda, Karen Nussbaum",7.4,
+hyde,named_actor,movies with Meryl Streep,10,0.705,"Michela Giraud: The Truth, I Swear!",2022,MOVIE,"comedy, documentation",,Michela Giraud,5.5,
+hyde,named_actor,show with Pedro Pascal,1,0.7619,Narcos,2015,SHOW,"drama, thriller, crime",,"Pedro Pascal, Matias Varela, Damián Alcázar, Francisco Denis, Alberto Ammann",8.8,TV-MA
+hyde,named_actor,show with Pedro Pascal,2,0.7133,Away,2020,SHOW,"drama, scifi, romance",,"Hilary Swank, Mark Ivanir, Ray Panthaki, Vivian Wu, Ato Essandoh",6.6,TV-14
+hyde,named_actor,show with Pedro Pascal,3,0.7129,Last One Standing,2019,SHOW,"thriller, drama, scifi",,,6.8,
+hyde,named_actor,show with Pedro Pascal,4,0.7048,Southern Survival,2020,SHOW,reality,,"Brandon Currin, Daniel Dabbs, Mikki Montgomery, Steve Jordan",5.2,
+hyde,named_actor,show with Pedro Pascal,5,0.7048,Dark Matter,2015,SHOW,"scifi, thriller, drama, action",,"Melissa O'Neil, Anthony Lemke, Alex Mallari Jr., Jodelle Ferland, Roger Cross",7.5,TV-14
+hyde,named_actor,show with Pedro Pascal,6,0.7001,Daybreak,2019,SHOW,"scifi, drama, fantasy, horror, action, comedy, thriller",,"Colin Ford, Alyvia Alyn Lind, Austin Crute, Krysta Rodriguez, Gregory Kasyan",6.6,TV-MA
+hyde,named_actor,show with Pedro Pascal,7,0.6948,Frontier,2016,SHOW,"action, history, drama",,"Jason Momoa, Landon Liboiron, Alun Armstrong, Jessica Matten, Zoe Boyle",7.1,TV-MA
+hyde,named_actor,show with Pedro Pascal,8,0.6934,"Los Briceño, una familia todo terreno",2019,SHOW,drama,,,7.8,
+hyde,named_actor,show with Pedro Pascal,9,0.6924,Somewhere Between,2017,SHOW,"drama, thriller, scifi",,"Paula Patton, Devon Sawa, JR Bourne, Aria Birch",6.2,TV-14
+hyde,named_actor,show with Pedro Pascal,10,0.6919,Black Summer,2019,SHOW,"scifi, thriller, action, drama, horror",,"Jaime King, Christine Lee, Zoe Marlett",6.5,TV-MA
+hyde,mood,something light and funny to cheer me up,1,0.7684,Rhyme Time Town,2020,SHOW,"animation, comedy, family",,"Luke Amis, Annabelle Westenholz-Smith, Maddie Evans",7.6,TV-Y
+hyde,mood,something light and funny to cheer me up,2,0.7411,Home: Adventures with Tip & Oh,2016,SHOW,"comedy, scifi, animation, family, fantasy",,"Rachel Crow, Mark Whitten, Matt Jones, Ana Ortiz, Ron Funches",6.0,TV-Y7
+hyde,mood,something light and funny to cheer me up,3,0.7396,Relatable,2018,SHOW,comedy,,,,
+hyde,mood,something light and funny to cheer me up,4,0.736,Talking Tom and Friends,2014,SHOW,"animation, comedy, drama, family, action, fantasy, european",,"Colin Hanks, Lisa Schwartz, James Adomian, Maria Bamford, Tom Kenny",6.1,TV-G
+hyde,mood,something light and funny to cheer me up,5,0.7355,Dear My Friends,2016,SHOW,"comedy, drama",Hong Jong-chan,"Ko Hyun-jung, Youn Yuh-jung, Na Moon-hee, Goh Doo-shim, Kim Hye-ja",8.2,TV-MA
+hyde,mood,something light and funny to cheer me up,6,0.7339,Tuca & Bertie,2019,SHOW,"comedy, animation",,"Tiffany Haddish, Ali Wong, Steven Yeun",7.3,TV-MA
+hyde,mood,something light and funny to cheer me up,7,0.7319,Lunatics,2019,SHOW,comedy,Chris Lilley,Chris Lilley,6.5,TV-MA
+hyde,mood,something light and funny to cheer me up,8,0.7285,Aunty Donna's Big Ol House of Fun,2020,SHOW,comedy,Max Miller,"Mark Bonanno, Zachary Ruane, Broden Kelly",7.9,TV-MA
+hyde,mood,something light and funny to cheer me up,9,0.7236,Feel Good,2020,SHOW,"drama, comedy, romance",Luke Snellin,"Mae Martin, Charlotte Ritchie, Lisa Kudrow, Phil Burgers, Adrian Lukis",7.5,TV-MA
+hyde,mood,something light and funny to cheer me up,10,0.7222,True: Magical Friends,2018,SHOW,animation,,,,TV-Y
+hyde,mood,I need a good cry,1,0.7285,Pieces of a Woman,2020,MOVIE,drama,Kornél Mundruczó,"Vanessa Kirby, Shia LaBeouf, Ellen Burstyn, Sarah Snook, Iliza Shlesinger",7.0,R
+hyde,mood,I need a good cry,2,0.7254,Loving is Losing,2019,MOVIE,,Fernando Ayllón,,,
+hyde,mood,I need a good cry,3,0.719,How to Get Over a Breakup,2018,MOVIE,comedy,"Bruno Ascenzo, Joanna Lombardi","Gisela Ponce de León, Karina Jordán, Jely Reategui, Christopher Von Uckermann, Carlos Carlín",6.1,
+hyde,mood,I need a good cry,4,0.7159,The Body Remembers When the World Broke Open,2019,MOVIE,"drama, european","Elle-Máijá Tailfeathers, Kathleen Hepburn","Violet Nelson, Elle-Máijá Tailfeathers, Barbara Eve Harris, Sonny Surowiec, Jay Cardinal Villeneuve",6.9,
+hyde,mood,I need a good cry,5,0.7097,Catch and Release,2006,MOVIE,"drama, romance, comedy",Susannah Grant,"Jennifer Garner, Timothy Olyphant, Kevin Smith, Sam Jaeger, Juliette Lewis",5.9,PG-13
+hyde,mood,I need a good cry,6,0.7055,Starting Over Again,2014,MOVIE,"comedy, drama, documentation, european",Olivia M. Lamasan,"Toni Gonzaga, Piolo Pascual, Iza Calzado, Lito Pimentel, Joross Gamboa",8.3,
+hyde,mood,I need a good cry,7,0.7035,First Love,2018,MOVIE,"drama, romance",Paul Soriano,"Bea Alonzo, Aga Muhlach, Edward Barber, Albie Casiño, Sandy Andolong",5.9,
+hyde,mood,I need a good cry,8,0.7005,After We Fell,2021,MOVIE,"romance, drama",Castille Landon,"Josephine Langford, Hero Fiennes Tiffin, Louise Lombard, Chance Perdomo, Rob Estes",4.6,R
+hyde,mood,I need a good cry,9,0.6994,My Amnesia Girl,2010,MOVIE,"comedy, romance",Cathy Garcia-Molina,"John Lloyd Cruz, Toni Gonzaga, Diane Medina, Angel Locsin, Kaye Abad",6.7,
+hyde,mood,I need a good cry,10,0.6986,For the Broken Hearted,2018,MOVIE,drama,Digo Ricio,"Shy Carlos, Yassi Pressman, Louise delos Reyes, Marco Gumabao, Sam Concepcion",6.7,
+hyde,mood,something intense that'll keep me on edge,1,0.7511,The Great Hack,2019,MOVIE,"documentation, history","Karim Amer, Jehane Noujaim","Brittany Kaiser, David Carroll, Paul-Olivier Dehaye, Ravi Naik, Julian Wheatland",7.1,
+hyde,mood,something intense that'll keep me on edge,2,0.7427,Trust No One: The Hunt for the Crypto King,2022,MOVIE,"documentation, crime",Luke Sewell,,6.3,R
+hyde,mood,something intense that'll keep me on edge,3,0.7264,Blackhat,2015,MOVIE,"action, crime, thriller",Michael Mann,"Chris Hemsworth, Leehom Wang, Tang Wei, Viola Davis, Holt McCallany",5.4,R
+hyde,mood,something intense that'll keep me on edge,4,0.7229,Chaos,2005,MOVIE,"crime, drama, action, thriller, european",Tony Giglio,"Jason Statham, Ryan Phillippe, Wesley Snipes, Henry Czerny, Justine Waddell",6.4,R
+hyde,mood,something intense that'll keep me on edge,5,0.7218,Cyber Hell: Exposing an Internet Horror,2022,MOVIE,"documentation, crime",Choi Jin-sung,,6.5,
+hyde,mood,something intense that'll keep me on edge,6,0.716,Security,2017,MOVIE,"thriller, action, crime, european",Alain Desrochers,"Antonio Banderas, Ben Kingsley, Liam McIntyre, Chad Lindberg, Gabriella Wright",5.7,R
+hyde,mood,something intense that'll keep me on edge,7,0.7155,Coin Heist,2017,MOVIE,"family, crime, drama, romance, thriller",Emily Hagins,"Alex Saxon, Alexis G. Zall, Sasha Pieterse, Jay Walker, Michael Cyril Creighton",4.7,PG
+hyde,mood,something intense that'll keep me on edge,8,0.7135,MindGamers,2015,MOVIE,"action, scifi, thriller, european",Andrew Goth,"Sam Neill, Tom Payne, Melia Kreiling, Julian Bleach, Antonia Campbell-Hughes",3.6,
+hyde,mood,something intense that'll keep me on edge,9,0.7128,Choose or Die,2022,MOVIE,"scifi, thriller, drama, horror",Toby Meakins,"Iola Evans, Asa Butterfield, Robert Englund, Angela Griffin, Ryan Gage",4.7,
+hyde,mood,something intense that'll keep me on edge,10,0.709,Dangerous Lies,2020,MOVIE,"thriller, horror, drama, comedy, crime",Michael Scott,"Camila Mendes, Jessie T. Usher, Jamie Chung, Cam Gigandet, Sasha Alexander",5.3,
+hyde,mood,something comforting to watch when I'm sick,1,0.7358,The Healing Powers of Dude,2020,SHOW,"family, fantasy, action, comedy, drama",,"Jace Chapman, Gabrielle Quinn, Sophie Kim, Larisa Oleynik, Mauricio Lara",6.4,TV-G
+hyde,mood,something comforting to watch when I'm sick,2,0.7052,Hometown Cha-Cha-Cha,2021,SHOW,"comedy, romance, drama",Yoo Je-won,"Shin Min-a, Kim Seon-ho, Lee Sang-yi, Gong Min-jeung, Kim Young-ok",8.4,TV-14
+hyde,mood,something comforting to watch when I'm sick,3,0.7017,Dear My Friends,2016,SHOW,"comedy, drama",Hong Jong-chan,"Ko Hyun-jung, Youn Yuh-jung, Na Moon-hee, Goh Doo-shim, Kim Hye-ja",8.2,TV-MA
+hyde,mood,something comforting to watch when I'm sick,4,0.6996,Good Witch,2015,SHOW,"scifi, fantasy, comedy, drama",,"Catherine Bell, James Denton, Catherine Disher, Sarah Power, Rhys Matthew Bond",7.2,TV-G
+hyde,mood,something comforting to watch when I'm sick,5,0.6982,Rhyme Time Town,2020,SHOW,"animation, comedy, family",,"Luke Amis, Annabelle Westenholz-Smith, Maddie Evans",7.6,TV-Y
+hyde,mood,something comforting to watch when I'm sick,6,0.6977,True: Magical Friends,2018,SHOW,animation,,,,TV-Y
+hyde,mood,something comforting to watch when I'm sick,7,0.6951,Feel Good,2020,SHOW,"drama, comedy, romance",Luke Snellin,"Mae Martin, Charlotte Ritchie, Lisa Kudrow, Phil Burgers, Adrian Lukis",7.5,TV-MA
+hyde,mood,something comforting to watch when I'm sick,8,0.6872,Tales of the City,2019,SHOW,drama,,"Laura Linney, Elliot Page, Paul Gross, Murray Bartlett, Charlie Barnett",7.4,TV-MA
+hyde,mood,something comforting to watch when I'm sick,9,0.6867,New Girl,2011,SHOW,"comedy, romance",,"Zooey Deschanel, Jake Johnson, Max Greenfield, Lamorne Morris, Hannah Simone",7.7,TV-14
+hyde,mood,something comforting to watch when I'm sick,10,0.6857,My Little Pony: Friendship Is Magic,2010,SHOW,"comedy, scifi, animation, fantasy, family, drama, music",,"Tara Strong, Andrea Libman, Ashleigh Ball, Tabitha St. Germain, Cathy Weseluck",7.6,TV-Y7
+hyde,mood,I want something mind-bending,1,0.7333,MindGamers,2015,MOVIE,"action, scifi, thriller, european",Andrew Goth,"Sam Neill, Tom Payne, Melia Kreiling, Julian Bleach, Antonia Campbell-Hughes",3.6,
+hyde,mood,I want something mind-bending,2,0.7302,The Most Unknown,2018,MOVIE,documentation,Ian Cheney,,6.5,
+hyde,mood,I want something mind-bending,3,0.7156,The Door Into Summer,2021,MOVIE,scifi,,,6.3,
+hyde,mood,I want something mind-bending,4,0.7107,The Cloverfield Paradox,2018,MOVIE,"horror, thriller, scifi, drama, action",Julius Onah,"Gugu Mbatha-Raw, Daniel Brühl, Chris O'Dowd, David Oyelowo, John Ortiz",5.5,PG-13
+hyde,mood,I want something mind-bending,5,0.7087,Total Recall,2012,MOVIE,"scifi, thriller, action, crime",Len Wiseman,"Colin Farrell, Kate Beckinsale, Jessica Biel, Bryan Cranston, Bokeem Woodbine",6.2,PG-13
+hyde,mood,I want something mind-bending,6,0.7075,Black Mirror: Bandersnatch,2018,MOVIE,"drama, thriller, scifi, fantasy",David Slade,"Fionn Whitehead, Craig Parkinson, Alice Lowe, Will Poulter, Asim Chaudhry",7.1,R
+hyde,mood,I want something mind-bending,7,0.7059,In Paradox,2019,MOVIE,"thriller, fantasy",Hamad AlSarraf,"Jassim Al-Nabhan, Samer Ismail",5.0,
+hyde,mood,I want something mind-bending,8,0.7032,The Discovery,2017,MOVIE,"scifi, thriller, romance, drama",Charlie McDowell,"Jason Segel, Rooney Mara, Robert Redford, Jesse Plemons, Riley Keough",6.2,
+hyde,mood,I want something mind-bending,9,0.7029,The Edge of All We Know,2020,MOVIE,documentation,Peter Galison,"Sheperd Doeleman, Stephen Hawking, Sasha Haco, Andrew Strominger, Malcolm Perry",6.6,
+hyde,mood,I want something mind-bending,10,0.7024,Freaks,2019,MOVIE,"scifi, thriller, drama","Adam B. Stein, Zach Lipovsky","Emile Hirsch, Bruce Dern, Grace Park, Amanda Crew, Lexy Kolker",6.7,R
+hyde,topic,movies about artificial intelligence,1,0.7381,MindGamers,2015,MOVIE,"action, scifi, thriller, european",Andrew Goth,"Sam Neill, Tom Payne, Melia Kreiling, Julian Bleach, Antonia Campbell-Hughes",3.6,
+hyde,topic,movies about artificial intelligence,2,0.7231,AI Love You,2022,MOVIE,"scifi, comedy, romance, drama",Stephan Zlotescu,"Mario Maurer, Pimchanok Luevisadpaibul, Michael S. New, David Asavanond, Sahajak Boonthanakit",4.4,PG-13
+hyde,topic,movies about artificial intelligence,3,0.7208,Human Nature,2019,MOVIE,"documentation, thriller",Adam Bolt,"David Baltimore, George Church, Jennifer Doudna, Rodolphe Barrangou, Antonio Regalado",7.7,
+hyde,topic,movies about artificial intelligence,4,0.7181,The Door Into Summer,2021,MOVIE,scifi,,,6.3,
+hyde,topic,movies about artificial intelligence,5,0.7139,Choose or Die,2022,MOVIE,"scifi, thriller, drama, horror",Toby Meakins,"Iola Evans, Asa Butterfield, Robert Englund, Angela Griffin, Ryan Gage",4.7,
+hyde,topic,movies about artificial intelligence,6,0.7117,Chappie,2015,MOVIE,"crime, action, scifi, drama, thriller",Neill Blomkamp,"Sharlto Copley, Dev Patel, Hugh Jackman, Ninja, Yo-Landi Visser",6.8,R
+hyde,topic,movies about artificial intelligence,7,0.7042,Awake,2021,MOVIE,"drama, scifi, thriller, action",Mark Raso,"Gina Rodriguez, Ariana Greenblatt, Lucius Hoyos, Shamier Anderson, Jennifer Jason Leigh",4.9,R
+hyde,topic,movies about artificial intelligence,8,0.7027,Johnny Mnemonic,1995,MOVIE,"action, drama, scifi, thriller",Robert Longo,"Keanu Reeves, Dina Meyer, Takeshi Kitano, Ice-T, Dolph Lundgren",5.6,R
+hyde,topic,movies about artificial intelligence,9,0.7016,Black Mirror: Bandersnatch,2018,MOVIE,"drama, thriller, scifi, fantasy",David Slade,"Fionn Whitehead, Craig Parkinson, Alice Lowe, Will Poulter, Asim Chaudhry",7.1,R
+hyde,topic,movies about artificial intelligence,10,0.7011,Cosmic Sin,2021,MOVIE,"action, scifi",Edward Drake,"Bruce Willis, Adelaide Kane, Frank Grillo, Lochlyn Munro, Costas Mandylor",2.5,R
+hyde,topic,a film about grief and loss,1,0.7473,Pieces of a Woman,2020,MOVIE,drama,Kornél Mundruczó,"Vanessa Kirby, Shia LaBeouf, Ellen Burstyn, Sarah Snook, Iliza Shlesinger",7.0,R
+hyde,topic,a film about grief and loss,2,0.7364,The Body Remembers When the World Broke Open,2019,MOVIE,"drama, european","Elle-Máijá Tailfeathers, Kathleen Hepburn","Violet Nelson, Elle-Máijá Tailfeathers, Barbara Eve Harris, Sonny Surowiec, Jay Cardinal Villeneuve",6.9,
+hyde,topic,a film about grief and loss,3,0.7103,How to Get Over a Breakup,2018,MOVIE,comedy,"Bruno Ascenzo, Joanna Lombardi","Gisela Ponce de León, Karina Jordán, Jely Reategui, Christopher Von Uckermann, Carlos Carlín",6.1,
+hyde,topic,a film about grief and loss,4,0.7079,My Beautiful Broken Brain,2014,MOVIE,documentation,"Sophie Robinson, Lotje Sodderland","Lotje Sodderland, Sophie Robinson, Jan Sodderland, Hente Sodderland, David Lynch",7.0,
+hyde,topic,a film about grief and loss,5,0.7075,After,2019,MOVIE,"drama, romance",Jenny Gage,"Josephine Langford, Hero Fiennes Tiffin, Shane Paul McGhie, Khadijha Red Thunder, Dylan Arnold",5.2,PG-13
+hyde,topic,a film about grief and loss,6,0.7053,Loving is Losing,2019,MOVIE,,Fernando Ayllón,,,
+hyde,topic,a film about grief and loss,7,0.704,Along for the Ride,2022,MOVIE,"drama, romance",Sofia Alvarez,"Emma Pasarow, Belmont Cameli, Kate Bosworth, Andie MacDowell, Laura Kariuki",6.1,
+hyde,topic,a film about grief and loss,8,0.703,To the Bone,2017,MOVIE,drama,Marti Noxon,"Lily Collins, Keanu Reeves, Carrie Preston, Lili Taylor, Alex Sharp",6.8,
+hyde,topic,a film about grief and loss,9,0.7005,The Lost Daughter,2021,MOVIE,drama,Maggie Gyllenhaal,"Olivia Colman, Dakota Johnson, Jessie Buckley, Paul Mescal, Ed Harris",6.7,R
+hyde,topic,a film about grief and loss,10,0.7,My Amnesia Girl,2010,MOVIE,"comedy, romance",Cathy Garcia-Molina,"John Lloyd Cruz, Toni Gonzaga, Diane Medina, Angel Locsin, Kaye Abad",6.7,
+hyde,topic,survival in the wild,1,0.7602,You vs. Wild: Out Cold,2021,MOVIE,action,Ben Simms,"Bear Grylls, Jason Derek Prempeh",5.4,
+hyde,topic,survival in the wild,2,0.7369,Adrift,2018,MOVIE,"action, thriller, romance, drama, european",Baltasar Kormákur,"Shailene Woodley, Sam Claflin, Jeffrey Thomas, Elizabeth Hawthorne, Grace Palmer",6.6,PG-13
+hyde,topic,survival in the wild,3,0.7181,The Body Remembers When the World Broke Open,2019,MOVIE,"drama, european","Elle-Máijá Tailfeathers, Kathleen Hepburn","Violet Nelson, Elle-Máijá Tailfeathers, Barbara Eve Harris, Sonny Surowiec, Jay Cardinal Villeneuve",6.9,
+hyde,topic,survival in the wild,4,0.7034,Last Man Down,2021,MOVIE,"thriller, action, scifi",Fansu Njie,"Daniel Stisen, Olga Kent, Daniel Nehme, Stanislav Yanevski, Madeleine Vall",4.8,R
+hyde,topic,survival in the wild,5,0.7019,The Wind,2019,MOVIE,"western, thriller, horror",Emma Tammi,"Caitlin Gerard, Ashley Zukerman, Julia Goldani Telles, Miles Anderson, Dylan McTee",5.5,R
+hyde,topic,survival in the wild,6,0.7018,Animals on the Loose: A You vs. Wild Interactive Movie,2021,MOVIE,"action, reality",Ben Simms,Bear Grylls,5.8,
+hyde,topic,survival in the wild,7,0.6999,The Forest,2016,MOVIE,"horror, thriller, scifi, drama, fantasy",Jason Zada,"Natalie Dormer, Eoin Macken, Stephanie Vogt, Osamu Tanpopo, Yasuo Tobishima",4.8,R
+hyde,topic,survival in the wild,8,0.6998,Pieces of a Woman,2020,MOVIE,drama,Kornél Mundruczó,"Vanessa Kirby, Shia LaBeouf, Ellen Burstyn, Sarah Snook, Iliza Shlesinger",7.0,R
+hyde,topic,survival in the wild,9,0.6991,Leave No Trace,2018,MOVIE,drama,Debra Granik,"Thomasin McKenzie, Ben Foster, Jeff Kober, Dale Dickey, Dana Millican",7.1,PG
+hyde,topic,survival in the wild,10,0.697,Tragic Jungle,2020,MOVIE,"drama, thriller",Yulene Olaizola,"Indira Andrewin, Gilberto Barraza, Mariano Tun Xool, Gabino Rodríguez, Eligio Meléndez",5.6,
+hyde,topic,films about the financial crisis,1,0.6986,21,2008,MOVIE,"crime, drama, history, thriller",Robert Luketic,"Jim Sturgess, Kevin Spacey, Kate Bosworth, Aaron Yoo, Liza Lapira",6.8,PG-13
+hyde,topic,films about the financial crisis,2,0.6904,Chaos,2005,MOVIE,"crime, drama, action, thriller, european",Tony Giglio,"Jason Statham, Ryan Phillippe, Wesley Snipes, Henry Czerny, Justine Waddell",6.4,R
+hyde,topic,films about the financial crisis,3,0.6807,Catch Me If You Can,2002,MOVIE,"drama, crime",Steven Spielberg,"Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen, Nathalie Baye",8.1,PG-13
+hyde,topic,films about the financial crisis,4,0.6789,Public Enemies,2009,MOVIE,"action, crime, drama, history, european",Michael Mann,"Johnny Depp, Christian Bale, Marion Cotillard, Jason Clarke, Rory Cochrane",7.0,R
+hyde,topic,films about the financial crisis,5,0.6782,The Departed,2006,MOVIE,"drama, thriller, crime, action",Martin Scorsese,"Jack Nicholson, Leonardo DiCaprio, Matt Damon, Mark Wahlberg, Vera Farmiga",8.5,R
+hyde,topic,films about the financial crisis,6,0.6768,Black Friday,2004,MOVIE,"crime, history, action, drama",Anurag Kashyap,"Kay Kay Menon, Pavan Malhotra, Aditya Srivastava, Dibyendu Bhattacharya, Kishore Kadam",8.4,R
+hyde,topic,films about the financial crisis,7,0.6761,Casino Royale,2006,MOVIE,"action, thriller, european",Martin Campbell,"Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench, Jeffrey Wright",8.0,
+hyde,topic,films about the financial crisis,8,0.6712,Connected,2008,MOVIE,"thriller, action, crime",Benny Chan,"Louis Koo, Barbie Hsu, Nick Cheung, Liu Ye, Fan Siu-wong",6.6,
+hyde,topic,films about the financial crisis,9,0.666,Brother's Shadow,2006,MOVIE,drama,Todd S. Yellin,"Scott Cohen, Judd Hirsch",6.1,
+hyde,topic,films about the financial crisis,10,0.6649,Blood Diamond,2006,MOVIE,"drama, thriller, action",Edward Zwick,"Leonardo DiCaprio, Djimon Hounsou, Jennifer Connelly, Kagiso Kuypers, Arnold Vosloo",8.0,R
+hyde,topic,documentaries about climate change,1,0.7848,Breaking Boundaries: The Science of Our Planet,2021,MOVIE,documentation,Jon Clay,"Johan Rockström, David Attenborough",7.8,
+hyde,topic,documentaries about climate change,2,0.768,Convergence: Courage in a Crisis,2021,MOVIE,documentation,Orlando von Einsiedel,"Wenhua Lin, Sara Khaki, Mohammad Rezi Eyni",5.4,R
+hyde,topic,documentaries about climate change,3,0.7649,Youth v Gov,2020,MOVIE,documentation,Christi Cooper,,6.7,
+hyde,topic,documentaries about climate change,4,0.7638,Cowspiracy: The Sustainability Secret,2014,MOVIE,documentation,Keegan Kuhn,,8.2,
+hyde,topic,documentaries about climate change,5,0.7561,Chasing Coral,2017,MOVIE,documentation,Jeff Orlowski,,8.1,
+hyde,topic,documentaries about climate change,6,0.7551,Our Planet: Behind the Scenes,2019,MOVIE,documentation,,David Attenborough,8.3,
+hyde,topic,documentaries about climate change,7,0.7532,David Attenborough: A Life on Our Planet,2020,MOVIE,documentation,"Keith Scholey, Jonathan Hughes, Alastair Fothergill","David Attenborough, Max Hughes",8.9,PG
+hyde,topic,documentaries about climate change,8,0.7309,The Game Changers,2019,MOVIE,documentation,Louie Psihoyos,"James Wilks, Arnold Schwarzenegger, Patrik Baboumian, Scott Jurek, Dotsie Bausch",7.8,
+hyde,topic,documentaries about climate change,9,0.7302,The Social Dilemma,2020,MOVIE,"drama, documentation",Jeff Orlowski,"Skyler Gisondo, Kara Hayward, Vincent Kartheiser, Tristan Harris, Jaron Lanier",7.6,PG-13
+hyde,topic,documentaries about climate change,10,0.7216,Night on Earth: Shot in the Dark,2020,MOVIE,documentation,Alex Minton,Samira Wiley,7.7,
+hyde,country,Korean drama,1,0.7683,Hometown Cha-Cha-Cha,2021,SHOW,"comedy, romance, drama",Yoo Je-won,"Shin Min-a, Kim Seon-ho, Lee Sang-yi, Gong Min-jeung, Kim Young-ok",8.4,TV-14
+hyde,country,Korean drama,2,0.7637,Lovestruck in the City,2020,SHOW,"drama, romance",Park Shin-woo,"Ji Chang-wook, Kim Ji-won, Kim Min-seok, So Joo-yeon, Ryu Kyung-soo",7.6,TV-14
+hyde,country,Korean drama,3,0.7566,Chocolate,2019,SHOW,drama,Lee Hyung-min,"Ha Ji-won, Yoon Kye-sang, Jang Seung-jo, Min Jin-woong, Yoo Teo",,
+hyde,country,Korean drama,4,0.755,Strongest Deliveryman,2017,SHOW,"drama, romance","Kim Shin-il, Jeon Woo-sung","Go Kyung-pyo, Chae Soo-bin, Kim Seon-ho, Go Won-hee, Son Ji-hyun",7.3,TV-MA
+hyde,country,Korean drama,5,0.752,Graceful Friends,2020,SHOW,"drama, crime","Song Hyun-wook, 박소연","Yu Jun-sang, Song Yun-ah, Kim Sung-oh, Han Da-gam, Kim Hye-eun",,TV-MA
+hyde,country,Korean drama,6,0.7497,Live Up To Your Name,2017,SHOW,"drama, fantasy, romance",Hong Jong-chan,"Kim Nam-gil, Kim Ah-joong, Yoo Min-kyu, Moon Ga-young, Uhm Hyo-seop",8.0,TV-MA
+hyde,country,Korean drama,7,0.7496,When the Camellia Blooms,2019,SHOW,"drama, romance, thriller, comedy",Cha Young-hoon,"Gong Hyo-jin, Kang Ha-neul, Kim Ji-seok, Ji E-su, Oh Jung-se",7.9,
+hyde,country,Korean drama,8,0.7486,Start-Up,2020,SHOW,"drama, comedy, romance",Oh Choong-hwan,"Bae Suzy, Nam Joo-hyuk, Kim Seon-ho, Kang Han-na, Kim Hae-sook",8.1,TV-14
+hyde,country,Korean drama,9,0.7483,Search: WWW,2019,SHOW,"drama, comedy, family, romance","Kwon Young-il, Jung Jee-hyun","Lim Soo-jung, Lee Da-hee, Jeon Hye-jin, Jang Ki-yong, Lee Jae-wook",7.8,
+hyde,country,Korean drama,10,0.7481,Touch Your Heart,2019,SHOW,"drama, comedy, romance",Park Joon-hwa,"Lee Dong-wook, Yoo In-na, Lee Sang-wu, Son Sung-yoon, Oh Jung-se",7.6,TV-MA
+hyde,country,a good French film,1,0.7337,Paris Is Us,2019,MOVIE,"drama, european",Elisabeth Vogler,"Noémie Schmidt, Grégoire Isvarine, Marie Mottet, Lou Castel, Mathias Minne",4.6,
+hyde,country,a good French film,2,0.7168,By the Sea,2015,MOVIE,"drama, romance, european",Angelina Jolie,"Angelina Jolie, Brad Pitt, Mélanie Laurent, Melvil Poupaud, Niels Arestrup",5.3,R
+hyde,country,a good French film,3,0.7078,The Kindness of Strangers,2019,MOVIE,"drama, european",Lone Scherfig,"Zoe Kazan, Andrea Riseborough, Tahar Rahim, Caleb Landry Jones, Jay Baruchel",6.4,
+hyde,country,a good French film,4,0.7053,One Night in Paris,2021,MOVIE,comedy,Mehdi Idir,"Roman Frayssinet, Kyan Khojandi, Djimo, Kev Adams, Bun-hay Mean",4.5,
+hyde,country,a good French film,5,0.7045,"To Each, Her Own",2018,MOVIE,"comedy, drama, european",Michel Leclerc,"Félix Moati, Judith Chemla, Rebecca Marder, Philippe Rebbot, Artus",5.4,
+hyde,country,a good French film,6,0.7045,Un + une,2015,MOVIE,"comedy, romance, drama, european",Claude Lelouch,"Jean Dujardin, Elsa Zylberstein, Christopher Lambert, Alice Pol, Rahul Vohra",6.2,
+hyde,country,a good French film,7,0.6929,I Am Jonas,2018,MOVIE,"drama, romance, european",Christophe Charrier,"Félix Maritaud, Nicolas Bauwens, Tommy Lee Baïk, Aure Atika, Marie Denarnaud",7.0,
+hyde,country,a good French film,8,0.6924,The Price of Success,2017,MOVIE,"drama, comedy, european",Teddy Lussi-Modeste,"Tahar Rahim, Maïwenn, Roschdy Zem, Grégoire Colin, Ali Marhyar",5.7,
+hyde,country,a good French film,9,0.6893,An Easy Girl,2019,MOVIE,"comedy, drama, european",Rebecca Zlotowski,"Mina Farid, Zahia Dehar, Benoît Magimel, Nuno Lopes, Clotilde Courau",5.6,
+hyde,country,a good French film,10,0.6875,Stuck Together,2021,MOVIE,comedy,Dany Boon,"Dany Boon, François Damiens, Laurence Arné, Élie Semoun, Nawell Madani",6.3,
+hyde,genre,spy thriller,1,0.7508,A Call to Spy,2019,MOVIE,"crime, drama, thriller, war, history",Lydia Dean Pilcher,"Sarah Megan Thomas, Stana Katic, Radhika Apte, Linus Roache, Rossif Sutherland",6.6,PG-13
+hyde,genre,spy thriller,2,0.7466,Official Secrets,2019,MOVIE,"drama, thriller, history, crime, war, romance",Gavin Hood,"Keira Knightley, Matt Smith, Ralph Fiennes, Adam Bakri, Matthew Goode",7.3,R
+hyde,genre,spy thriller,3,0.7382,The November Man,2014,MOVIE,"thriller, action, crime",Roger Donaldson,"Pierce Brosnan, Luke Bracey, Olga Kurylenko, Bill Smitrovich, Amila Terzimehic",6.2,R
+hyde,genre,spy thriller,4,0.7328,Legacy of Lies,2020,MOVIE,"thriller, action",Adrian Bol,"Scott Adkins, Honor Kneafsey, Martin McDougall, Yuliia Sobol, Sergey Kalantay",5.0,R
+hyde,genre,spy thriller,5,0.7287,Casino Royale,2006,MOVIE,"action, thriller, european",Martin Campbell,"Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench, Jeffrey Wright",8.0,
+hyde,genre,spy thriller,6,0.7246,Mission: Impossible,1996,MOVIE,"thriller, action",Brian De Palma,"Tom Cruise, Jon Voight, Henry Czerny, Emmanuelle Béart, Ving Rhames",7.1,PG-13
+hyde,genre,spy thriller,7,0.722,Security,2017,MOVIE,"thriller, action, crime, european",Alain Desrochers,"Antonio Banderas, Ben Kingsley, Liam McIntyre, Chad Lindberg, Gabriella Wright",5.7,R
+hyde,genre,spy thriller,8,0.722,S.W.A.T.: Under Siege,2017,MOVIE,"action, crime, thriller",Tony Giglio,"Adrianne Palicki, Michael Jai White, Ty Olsson, Pascale Hutton, Sam Jaeger",4.5,R
+hyde,genre,spy thriller,9,0.7205,Quantum of Solace,2008,MOVIE,"thriller, action",Marc Forster,"Daniel Craig, Olga Kurylenko, Mathieu Amalric, Judi Dench, Giancarlo Giannini",6.6,PG-13
+hyde,genre,spy thriller,10,0.7193,The Foreigner,2017,MOVIE,"action, thriller, crime, drama, european",Martin Campbell,"Pierce Brosnan, Jackie Chan, Rory Fleck-Byrne, Ray Fearon, Charlie Murphy",7.0,R
+hyde,genre,romantic comedy,1,0.746,One by Two,2014,MOVIE,"comedy, drama, romance",Devika Bhagat,"Abhay Deol, Preeti Desai, Tahir Raj Bhasin, Geetika Tyagi, Lillete Dubey",3.9,
+hyde,genre,romantic comedy,2,0.7372,Love in a Puff,2010,MOVIE,"romance, comedy, drama",Pang Ho-cheung,"Shawn Yue, Miriam Yeung, Tat-Ming Cheung, Chui Tien-You, Miu Fei-Lam",7.1,
+hyde,genre,romantic comedy,3,0.7359,Our Lovers,2016,MOVIE,"romance, comedy, drama, european",Miguel Ángel Lamata,"Eduardo Noriega, Michelle Jenner, Fele Martínez, Amaia Salamanca, Gabino Diego",6.7,
+hyde,genre,romantic comedy,4,0.7324,Mumbai Delhi Mumbai,2014,MOVIE,"comedy, romance",Satish Rajwade,"Shiv Panditt, Pia Bajpiee",5.7,PG
+hyde,genre,romantic comedy,5,0.7319,Unexpectedly Yours,2017,MOVIE,"comedy, romance",Cathy Garcia-Molina,"Sharon Cuneta, Robin Padilla, Julia Barretto, Joshua Garcia",6.7,
+hyde,genre,romantic comedy,6,0.731,When Love Happens,2014,MOVIE,romance,,,4.8,
+hyde,genre,romantic comedy,7,0.7295,The Kindness of Strangers,2019,MOVIE,"drama, european",Lone Scherfig,"Zoe Kazan, Andrea Riseborough, Tahar Rahim, Caleb Landry Jones, Jay Baruchel",6.4,
+hyde,genre,romantic comedy,8,0.7226,First Love,2018,MOVIE,"drama, romance",Paul Soriano,"Bea Alonzo, Aga Muhlach, Edward Barber, Albie Casiño, Sandy Andolong",5.9,
+hyde,genre,romantic comedy,9,0.7222,Almost Love,2019,MOVIE,"comedy, drama, romance",Mike Doyle,"Scott Evans, Augustus Prew, Michelle Buteau, Colin Donnell, Zoe Chao",5.7,
+hyde,genre,romantic comedy,10,0.7213,Phone Swap,2012,MOVIE,"comedy, romance",Kunle Afolayan,"Wale Ojo, Nse Ikpe-Etim, Joke Silva, Chika Okpala, Lydia Forson",6.2,
+hyde,complex,spy thriller with action by Martin Scorsese,1,0.7913,The Departed,2006,MOVIE,"drama, thriller, crime, action",Martin Scorsese,"Jack Nicholson, Leonardo DiCaprio, Matt Damon, Mark Wahlberg, Vera Farmiga",8.5,R
+hyde,complex,spy thriller with action by Martin Scorsese,2,0.7599,The Irishman,2019,MOVIE,"crime, drama, history, thriller",Martin Scorsese,"Robert De Niro, Al Pacino, Joe Pesci, Stephen Graham, Ray Romano",7.8,R
+hyde,complex,spy thriller with action by Martin Scorsese,3,0.7535,GoodFellas,1990,MOVIE,"drama, crime",Martin Scorsese,"Ray Liotta, Robert De Niro, Joe Pesci, Lorraine Bracco, Paul Sorvino",8.7,R
+hyde,complex,spy thriller with action by Martin Scorsese,4,0.737,Taxi Driver,1976,MOVIE,"drama, crime",Martin Scorsese,"Robert De Niro, Jodie Foster, Albert Brooks, Harvey Keitel, Cybill Shepherd",8.2,R
+hyde,complex,spy thriller with action by Martin Scorsese,5,0.7287,The Irishman: In Conversation,2019,MOVIE,documentation,,"Martin Scorsese, Robert De Niro, Joe Pesci, Al Pacino",,
+hyde,complex,spy thriller with action by Martin Scorsese,6,0.7628,A Call to Spy,2019,MOVIE,"crime, drama, thriller, war, history",Lydia Dean Pilcher,"Sarah Megan Thomas, Stana Katic, Radhika Apte, Linus Roache, Rossif Sutherland",6.6,PG-13
+hyde,complex,spy thriller with action by Martin Scorsese,7,0.7563,Catch Me If You Can,2002,MOVIE,"drama, crime",Steven Spielberg,"Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen, Nathalie Baye",8.1,PG-13
+hyde,complex,spy thriller with action by Martin Scorsese,8,0.7529,Security,2017,MOVIE,"thriller, action, crime, european",Alain Desrochers,"Antonio Banderas, Ben Kingsley, Liam McIntyre, Chad Lindberg, Gabriella Wright",5.7,R
+hyde,complex,spy thriller with action by Martin Scorsese,9,0.7528,Casino Royale,2006,MOVIE,"action, thriller, european",Martin Campbell,"Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench, Jeffrey Wright",8.0,
+hyde,complex,spy thriller with action by Martin Scorsese,10,0.7493,S.W.A.T.: Under Siege,2017,MOVIE,"action, crime, thriller",Tony Giglio,"Adrianne Palicki, Michael Jai White, Ty Olsson, Pascale Hutton, Sam Jaeger",4.5,R
+hyde,complex,Christopher Nolan mind-bending thriller,1,0.7644,Inception,2010,MOVIE,"action, scifi, music, thriller",Christopher Nolan,"Leonardo DiCaprio, Joseph Gordon-Levitt, Ken Watanabe, Tom Hardy, Elliot Page",8.8,PG-13
+hyde,complex,Christopher Nolan mind-bending thriller,2,0.7559,The Dark Knight Rises,2012,MOVIE,"thriller, action, drama, crime",Christopher Nolan,"Christian Bale, Michael Caine, Gary Oldman, Anne Hathaway, Tom Hardy",8.4,PG-13
+hyde,complex,Christopher Nolan mind-bending thriller,3,0.7294,Dunkirk,2017,MOVIE,"drama, war, action, thriller, history, european",Christopher Nolan,"Fionn Whitehead, Tom Hardy, Mark Rylance, Kenneth Branagh, Cillian Murphy",7.8,PG-13
+hyde,complex,Christopher Nolan mind-bending thriller,4,0.7421,Total Recall,2012,MOVIE,"scifi, thriller, action, crime",Len Wiseman,"Colin Farrell, Kate Beckinsale, Jessica Biel, Bryan Cranston, Bokeem Woodbine",6.2,PG-13
+hyde,complex,Christopher Nolan mind-bending thriller,5,0.7329,The Dreamseller,2016,MOVIE,drama,Jayme Monjardim,"César Troncoso, Dan Stulbach, Thiago Mendonça, Leonardo Medeiros, Guilherme Prates",6.0,
+hyde,complex,Christopher Nolan mind-bending thriller,6,0.7244,MindGamers,2015,MOVIE,"action, scifi, thriller, european",Andrew Goth,"Sam Neill, Tom Payne, Melia Kreiling, Julian Bleach, Antonia Campbell-Hughes",3.6,
+hyde,complex,Christopher Nolan mind-bending thriller,7,0.7166,Awake,2021,MOVIE,"drama, scifi, thriller, action",Mark Raso,"Gina Rodriguez, Ariana Greenblatt, Lucius Hoyos, Shamier Anderson, Jennifer Jason Leigh",4.9,R
+hyde,complex,Christopher Nolan mind-bending thriller,8,0.716,Imperial Dreams,2014,MOVIE,drama,Malik Vitthal,"John Boyega, Glenn Plummer, De'Aundre Bonds, Keke Palmer, Sufe Bradshaw",6.7,
+hyde,complex,Christopher Nolan mind-bending thriller,9,0.7142,King of Thieves,2018,MOVIE,"drama, crime, history",James Marsh,"Michael Caine, Jim Broadbent, Tom Courtenay, Charlie Cox, Paul Whitehouse",5.5,R
+hyde,complex,Christopher Nolan mind-bending thriller,10,0.7112,Lucid Dream,2017,MOVIE,"thriller, scifi",Kim Joon-Sung,"Go Soo, Sol Kyung-gu, Park Yoo-chun, Kang Hye-jung, Park In-hwan",6.1,
+hyde,complex,Tom Hanks drama about friendship,1,0.7514,Forrest Gump,1994,MOVIE,"drama, romance",Robert Zemeckis,"Tom Hanks, Robin Wright, Gary Sinise, Mykelti Williamson, Sally Field",8.8,PG-13
+hyde,complex,Tom Hanks drama about friendship,2,0.731,The Terminal,2004,MOVIE,"drama, comedy, romance",Steven Spielberg,"Tom Hanks, Catherine Zeta-Jones, Stanley Tucci, Chi McBride, Diego Luna",7.4,PG-13
+hyde,complex,Tom Hanks drama about friendship,3,0.7261,You've Got Mail,1998,MOVIE,"comedy, romance, drama",Nora Ephron,"Tom Hanks, Meg Ryan, Greg Kinnear, Parker Posey, Steve Zahn",6.7,PG
+hyde,complex,Tom Hanks drama about friendship,4,0.7202,Road to Perdition,2002,MOVIE,"thriller, documentation, drama, crime",Sam Mendes,"Tom Hanks, Tyler Hoechlin, Paul Newman, Jude Law, Daniel Craig",7.7,R
+hyde,complex,Tom Hanks drama about friendship,5,0.6987,Catch Me If You Can,2002,MOVIE,"drama, crime",Steven Spielberg,"Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen, Nathalie Baye",8.1,PG-13
+hyde,complex,Tom Hanks drama about friendship,6,0.7192,A Stand Worthy of Men,2021,MOVIE,"drama, comedy",,,7.2,
+hyde,complex,Tom Hanks drama about friendship,7,0.7158,True: Friendship Day,2020,MOVIE,"animation, family","Todd Kauffman, Mark Thornton","Michela Luci, Anna Claire Bartlam, Julie Lemieux, Jamie Watson, Nicolas Aqui",6.9,
+hyde,complex,Tom Hanks drama about friendship,8,0.7086,Buddies,2013,MOVIE,"drama, comedy, action, documentation, european",Marcelo Galvão,"Ariel Goldenberg, Breno Viola, Rita Pokk, Lima Duarte, Rui Unas",6.5,
+hyde,complex,Tom Hanks drama about friendship,9,0.6971,Pup Star: Better 2Gether,2017,MOVIE,family,Robert Vince,"Madison Pettis, David DeLuise, Jed Rees, Danny Woodburn, Mackenzie Sol",4.3,G
+hyde,complex,Tom Hanks drama about friendship,10,0.6947,Accomplice,2021,MOVIE,documentation,Jeremy Grant,"Andreu Lacondeguy, Brandon Semenuk, Cam McCaul",7.2,
+hyde,complex,Korean crime thriller like Parasite,1,0.7588,High Society,2018,MOVIE,"drama, crime",Byun Hyuk,"Park Hae-il, Soo Ae, Yoon Je-moon, Ra Mi-ran, Lee Jin-wook",5.5,
+hyde,complex,Korean crime thriller like Parasite,2,0.7585,The Chase,2017,MOVIE,"thriller, crime, drama",Kim Hong-sun,"Baek Yoon-sik, Sung Dong-il, Bae Jong-ok, Son Jong-hak, Kim Hye-In",6.6,
+hyde,complex,Korean crime thriller like Parasite,3,0.7532,Night in Paradise,2020,MOVIE,"thriller, drama, action, crime",Park Hoon-jung,"Um Tae-goo, Jeon Yeo-been, Cha Seung-won, Lee Ki-young, Park Ho-san",6.7,
+hyde,complex,Korean crime thriller like Parasite,4,0.7532,The Unjust,2010,MOVIE,"thriller, crime, drama, action",Ryoo Seung-wan,"Hwang Jung-min, Ryoo Seung-bum, Yoo Hae-jin, Cheon Ho-jin, Ma Dong-seok",6.6,
+hyde,complex,Korean crime thriller like Parasite,5,0.7459,The Drug King,2018,MOVIE,"crime, action, drama",Woo Min-ho,"Song Kang-ho, Cho Jung-seok, Bae Doona, Kim So-jin, Kim Dae-myung",6.2,
+hyde,complex,Korean crime thriller like Parasite,6,0.7413,Revenger,2018,MOVIE,"action, crime, thriller",Lee Seung-Won,"Bruce Khan, Park Hee-soon, Yoon Jin-seo, Kim In-kwon, Kim Na-yeon",5.7,NC-17
+hyde,complex,Korean crime thriller like Parasite,7,0.7367,Jo Pil-ho: The Dawning Rage,2019,MOVIE,"drama, action, crime, thriller",Lee Jeong-beom,"Lee Sun-kyun, Jeon So-nee, Park Hae-jun, Lee You-young, Park Byung-eun",6.3,
+hyde,complex,Korean crime thriller like Parasite,8,0.7327,The Berlin File,2013,MOVIE,"action, thriller",Ryoo Seung-wan,"Ha Jung-woo, Han Suk-kyu, Ryoo Seung-bum, Jun Ji-hyun, Lee Kyung-young",6.6,
+hyde,complex,Korean crime thriller like Parasite,9,0.7251,Svaha: The Sixth Finger,2019,MOVIE,"thriller, crime, horror",Jang Jae-hyun,"Lee Jung-jae, Park Jeong-min, Lee Jae-in, Yoo Ji-tae, Jung Jin-young",6.2,
+hyde,complex,Korean crime thriller like Parasite,10,0.7248,Time to Hunt,2020,MOVIE,"thriller, drama, action, scifi, crime",Yoon Sung-hyun,"Lee Je-hoon, Ahn Jae-hong, Choi Woo-shik, Park Jeong-min, Park Hae-soo",6.3,
+hyde,complex,80s horror film,1,0.751,A Nightmare on Elm Street,1984,MOVIE,horror,Wes Craven,"Heather Langenkamp, Robert Englund, John Saxon, Ronee Blakley, Amanda Wyss",7.4,R
+hyde,complex,80s horror film,2,0.6758,Christine,1983,MOVIE,"horror, thriller, european",John Carpenter,"Keith Gordon, John Stockwell, Alexandra Paul, Robert Prosky, Harry Dean Stanton",6.7,R
+hyde,complex,80s horror film,3,0.65,Strange Voices,1987,MOVIE,drama,Arthur Allan Seidelman,"Nancy McKeon, Valerie Harper, Stephen Macht, Tricia Leigh Fisher, Millie Perkins",6.3,
+hyde,complex,80s horror film,4,0.6462,A Stoning in Fulham County,1988,MOVIE,"thriller, crime, drama",Larry Elikann,"Ron Perlman, Ken Olin, Jill Eikenberry, Gregg Henry, Nicholas Pryor",5.9,
+hyde,complex,80s horror film,5,0.6357,Too Young The Hero,1988,MOVIE,"drama, war",Buzz Kulik,"Ricky Schroder, Debra Mooney, Mary-Louise Parker, Jon DeVries",6.7,
+hyde,complex,80s horror film,6,0.6243,Adam: His Song Continues,1986,MOVIE,"crime, drama",Robert Markowitz,"JoBeth Williams, Daniel J. Travanti, Richard Masur, Martha Scott, Paul Regina",7.0,
+hyde,complex,80s horror film,7,0.6222,Lean On Me,1989,MOVIE,drama,John G. Avildsen,"Morgan Freeman, Beverly Todd, Robert Guillaume, Ethan Phillips, Lynne Thigpen",7.4,PG-13
+hyde,complex,80s horror film,8,0.6215,The Blue Lagoon,1980,MOVIE,"romance, action, drama",Randal Kleiser,"Brooke Shields, Christopher Atkins, Leo McKern, William Daniels, Jeffrey Kleiser",5.8,R
+hyde,complex,80s horror film,9,0.6175,Once Upon a Time in America,1984,MOVIE,"crime, drama, european",Sergio Leone,"Robert De Niro, James Woods, Elizabeth McGovern, Joe Pesci, Tuesday Weld",8.3,R
+hyde,complex,80s horror film,10,0.6067,Waiting for the Hearse,1985,MOVIE,comedy,Alejandro Doria,"Luis Brandoni, China Zorrilla, Antonio Gasalla, Julio De Grazia, Betiana Blum",8.0,
+hyde,complex,French romantic comedy,1,0.7273,Paris Is Us,2019,MOVIE,"drama, european",Elisabeth Vogler,"Noémie Schmidt, Grégoire Isvarine, Marie Mottet, Lou Castel, Mathias Minne",4.6,
+hyde,complex,French romantic comedy,2,0.7256,Wedding Unplanned,2017,MOVIE,"romance, comedy, drama, european",Reem Kherici,"Reem Kherici, Nicolas Duvauchelle, Sylvie Testud, Julia Piaton, Chantal Lauby",5.7,
+hyde,complex,French romantic comedy,3,0.7151,Stuck Together,2021,MOVIE,comedy,Dany Boon,"Dany Boon, François Damiens, Laurence Arné, Élie Semoun, Nawell Madani",6.3,
+hyde,complex,French romantic comedy,4,0.7134,The Kindness of Strangers,2019,MOVIE,"drama, european",Lone Scherfig,"Zoe Kazan, Andrea Riseborough, Tahar Rahim, Caleb Landry Jones, Jay Baruchel",6.4,
+hyde,complex,French romantic comedy,5,0.7121,One Night in Paris,2021,MOVIE,comedy,Mehdi Idir,"Roman Frayssinet, Kyan Khojandi, Djimo, Kev Adams, Bun-hay Mean",4.5,
+hyde,complex,French romantic comedy,6,0.7104,Un + une,2015,MOVIE,"comedy, romance, drama, european",Claude Lelouch,"Jean Dujardin, Elsa Zylberstein, Christopher Lambert, Alice Pol, Rahul Vohra",6.2,
+hyde,complex,French romantic comedy,7,0.704,By the Sea,2015,MOVIE,"drama, romance, european",Angelina Jolie,"Angelina Jolie, Brad Pitt, Mélanie Laurent, Melvil Poupaud, Niels Arestrup",5.3,R
+hyde,complex,French romantic comedy,8,0.7025,The Misadventures of Hedi and Cokeman,2021,MOVIE,"action, crime, comedy",,"Hedi Bouchenafa, Nassim Lyes, Fred Trestot",4.4,
+hyde,complex,French romantic comedy,9,0.7014,Madame Claude,2021,MOVIE,"crime, drama, romance",Sylvie Verheyde,"Karole Rocher, Garance Marillier, Roschdy Zem, Pierre Deladonchamps, Paul Hamy",5.4,
+hyde,complex,French romantic comedy,10,0.6999,Dangerous Liaisons,2022,MOVIE,"romance, drama",Rachel Suissa,"Paola Locatelli, Simon Rérolle, Alexis Michalik, Camille Léon-Fucien, Elsa Duchez Paverani",3.9,
+hyde,complex,documentary about nature and wildlife,1,0.7958,Breaking Boundaries: The Science of Our Planet,2021,MOVIE,documentation,Jon Clay,"Johan Rockström, David Attenborough",7.8,
+hyde,complex,documentary about nature and wildlife,2,0.7873,Our Planet: Behind the Scenes,2019,MOVIE,documentation,,David Attenborough,8.3,
+hyde,complex,documentary about nature and wildlife,3,0.7803,David Attenborough: A Life on Our Planet,2020,MOVIE,documentation,"Keith Scholey, Jonathan Hughes, Alastair Fothergill","David Attenborough, Max Hughes",8.9,PG
+hyde,complex,documentary about nature and wildlife,4,0.7564,Chasing Coral,2017,MOVIE,documentation,Jeff Orlowski,,8.1,
+hyde,complex,documentary about nature and wildlife,5,0.7428,Virunga,2014,MOVIE,"documentation, war",Orlando von Einsiedel,"André Bauma, Emmanuel de Merode, Mélanie Gouby, Rodrigue Mugaruka Katembo, Vianney Kazarama",8.2,
+hyde,complex,documentary about nature and wildlife,6,0.7428,Mission Blue,2014,MOVIE,"documentation, drama","Fisher Stevens, Robert Nixon","James Cameron, Michael deGruy, Sylvia Earle, Bryce Groark, Jeremy Jackson",7.9,PG
+hyde,complex,documentary about nature and wildlife,7,0.7416,Cowspiracy: The Sustainability Secret,2014,MOVIE,documentation,Keegan Kuhn,,8.2,
+hyde,complex,documentary about nature and wildlife,8,0.737,The Beginning of Life 2: Outside,2020,MOVIE,documentation,Renata Terra,,8.0,G
+hyde,complex,documentary about nature and wildlife,9,0.7361,Virunga: Gorillas in Peril,2015,MOVIE,documentation,,,6.6,
+hyde,complex,documentary about nature and wildlife,10,0.7334,The Path of the Anaconda,2019,MOVIE,documentation,Alessandro Angulo,,6.7,
+hyde,complex,something like Inception but shorter,1,0.7428,Inception,2010,MOVIE,"action, scifi, music, thriller",Christopher Nolan,"Leonardo DiCaprio, Joseph Gordon-Levitt, Ken Watanabe, Tom Hardy, Elliot Page",8.8,PG-13
+hyde,complex,something like Inception but shorter,2,0.732,The Dreamseller,2016,MOVIE,drama,Jayme Monjardim,"César Troncoso, Dan Stulbach, Thiago Mendonça, Leonardo Medeiros, Guilherme Prates",6.0,
+hyde,complex,something like Inception but shorter,3,0.7271,Total Recall,2012,MOVIE,"scifi, thriller, action, crime",Len Wiseman,"Colin Farrell, Kate Beckinsale, Jessica Biel, Bryan Cranston, Bokeem Woodbine",6.2,PG-13
+hyde,complex,something like Inception but shorter,4,0.7055,Awake,2021,MOVIE,"drama, scifi, thriller, action",Mark Raso,"Gina Rodriguez, Ariana Greenblatt, Lucius Hoyos, Shamier Anderson, Jennifer Jason Leigh",4.9,R
+hyde,complex,something like Inception but shorter,5,0.703,Lucid Dream,2017,MOVIE,"thriller, scifi",Kim Joon-Sung,"Go Soo, Sol Kyung-gu, Park Yoo-chun, Kang Hye-jung, Park In-hwan",6.1,
+hyde,complex,something like Inception but shorter,6,0.7015,King of Thieves,2018,MOVIE,"drama, crime, history",James Marsh,"Michael Caine, Jim Broadbent, Tom Courtenay, Charlie Cox, Paul Whitehouse",5.5,R
+hyde,complex,something like Inception but shorter,7,0.6985,Before I Wake,2016,MOVIE,"drama, fantasy, horror, thriller",Mike Flanagan,"Kate Bosworth, Jacob Tremblay, Thomas Jane, Annabeth Gish, Lance E. Nichols",6.2,PG-13
+hyde,complex,something like Inception but shorter,8,0.6984,MindGamers,2015,MOVIE,"action, scifi, thriller, european",Andrew Goth,"Sam Neill, Tom Payne, Melia Kreiling, Julian Bleach, Antonia Campbell-Hughes",3.6,
+hyde,complex,something like Inception but shorter,9,0.696,The Door Into Summer,2021,MOVIE,scifi,,,6.3,
+hyde,complex,something like Inception but shorter,10,0.6956,Super Me,2021,MOVIE,"action, drama, fantasy, scifi",Zhang Chong,"Darren Wang, Song Jia, Cao Bingkun, Wu Gang, King Shih-Chieh",5.8,
+hyde,audience,something to watch with my 8-year-old,1,0.7287,My Little Pony: Friendship Is Magic,2010,SHOW,"comedy, scifi, animation, fantasy, family, drama, music",,"Tara Strong, Andrea Libman, Ashleigh Ball, Tabitha St. Germain, Cathy Weseluck",7.6,TV-Y7
+hyde,audience,something to watch with my 8-year-old,2,0.7259,True: Magical Friends,2018,SHOW,animation,,,,TV-Y
+hyde,audience,something to watch with my 8-year-old,3,0.7252,Rainbow Ruby,2016,SHOW,"family, fantasy, animation, comedy",Shin Tae sik,,6.6,TV-Y
+hyde,audience,something to watch with my 8-year-old,4,0.7153,LEGO Friends: Girls on a Mission,2018,SHOW,animation,,"Jasmine Elcock, Amaya Harrow, Jasmine St.Clair, Allegra Clark, Faye Mata",6.2,TV-Y
+hyde,audience,something to watch with my 8-year-old,5,0.7141,The Bureau of Magical Things,2018,SHOW,"scifi, family, fantasy, drama",,"Kimie Tsukakoshi, Mia Milnes, Elizabeth Cullen, Julian Cullen, Rainbow Wedell",6.7,TV-G
+hyde,audience,something to watch with my 8-year-old,6,0.7123,Centaurworld,2021,SHOW,"scifi, action, animation, comedy, family, fantasy",,"Kimiko Glenn, Jessie Mueller, Megan Hilty, Parvesh Cheena, Josh Radnor",7.6,TV-Y7
+hyde,audience,something to watch with my 8-year-old,7,0.7114,Rhyme Time Town,2020,SHOW,"animation, comedy, family",,"Luke Amis, Annabelle Westenholz-Smith, Maddie Evans",7.6,TV-Y
+hyde,audience,something to watch with my 8-year-old,8,0.71,Rainbow Rangers,2018,SHOW,"animation, family, fantasy",,,4.4,TV-Y
+hyde,audience,something to watch with my 8-year-old,9,0.7088,Disenchantment,2018,SHOW,"scifi, comedy, fantasy, animation, action",,"Abbi Jacobson, Lucy Montgomery, Nat Faxon, Tress MacNeille, David Herman",7.2,TV-14
+hyde,audience,something to watch with my 8-year-old,10,0.7086,True and the Rainbow Kingdom,2017,SHOW,"animation, comedy, family, fantasy",,"Anna Claire Bartlam, Michela Luci, Jamie Watson",7.2,TV-Y
+hyde,audience,a movie for date night,1,0.7271,One by Two,2014,MOVIE,"comedy, drama, romance",Devika Bhagat,"Abhay Deol, Preeti Desai, Tahir Raj Bhasin, Geetika Tyagi, Lillete Dubey",3.9,
+hyde,audience,a movie for date night,2,0.7243,The Kindness of Strangers,2019,MOVIE,"drama, european",Lone Scherfig,"Zoe Kazan, Andrea Riseborough, Tahar Rahim, Caleb Landry Jones, Jay Baruchel",6.4,
+hyde,audience,a movie for date night,3,0.7209,Us and Them,2018,MOVIE,"drama, romance",René Liu,"Jing Boran, Zhou Dongyu, Tian Zhuangzhuang, Qu Zheming, Shi Yufei",7.3,
+hyde,audience,a movie for date night,4,0.7177,Deidra & Laney Rob a Train,2017,MOVIE,"drama, comedy, crime",Sydney Freeland,"Ashleigh Murray, Rachel Crow, Tim Blake Nelson, David Sullivan, Danielle Nicolet",6.0,
+hyde,audience,a movie for date night,5,0.7163,When Love Happens,2014,MOVIE,romance,,,4.8,
+hyde,audience,a movie for date night,6,0.7161,Love Wedding Repeat,2020,MOVIE,"comedy, romance",Dean Craig,"Sam Claflin, Olivia Munn, Eleanor Tomlinson, Freida Pinto, Joel Fry",5.5,
+hyde,audience,a movie for date night,7,0.7157,The Lovebirds,2021,MOVIE,"romance, comedy, action, thriller, crime",Michael Showalter,"Issa Rae, Kumail Nanjiani, Paul Sparks, Anna Camp, Nicholas X. Parsons",6.0,R
+hyde,audience,a movie for date night,8,0.7156,Almost Love,2019,MOVIE,"comedy, drama, romance",Mike Doyle,"Scott Evans, Augustus Prew, Michelle Buteau, Colin Donnell, Zoe Chao",5.7,
+hyde,audience,a movie for date night,9,0.7156,The Sweetest Thing,2002,MOVIE,"comedy, romance",Roger Kumble,"Cameron Diaz, Selma Blair, Christina Applegate, Thomas Jane, Jason Bateman",5.1,R
+hyde,audience,a movie for date night,10,0.7149,One-Way to Tomorrow,2020,MOVIE,"comedy, romance, drama",Ozan Açıktan,"Metin Akdülger, Dilan Çiçek Deniz, Tevfik Kartal, Fatma Filiz Sencan, Omur Kayakirilmaz",5.6,
+hyde,audience,something I can have on in the background,1,0.7801,Relatable,2018,SHOW,comedy,,,,
+hyde,audience,something I can have on in the background,2,0.7669,Community,2009,SHOW,comedy,,"Joel McHale, Gillian Jacobs, Danny Pudi, Alison Brie, Jim Rash",8.5,TV-PG
+hyde,audience,something I can have on in the background,3,0.7553,New Girl,2011,SHOW,"comedy, romance",,"Zooey Deschanel, Jake Johnson, Max Greenfield, Lamorne Morris, Hannah Simone",7.7,TV-14
+hyde,audience,something I can have on in the background,4,0.7521,Friends from College,2017,SHOW,"comedy, drama",,"Keegan-Michael Key, Cobie Smulders, Annie Parisse, Nat Faxon, Fred Savage",6.9,TV-MA
+hyde,audience,something I can have on in the background,5,0.7471,Easy,2016,SHOW,"drama, comedy",Joe Swanberg,,6.9,TV-MA
+hyde,audience,something I can have on in the background,6,0.7469,Dear My Friends,2016,SHOW,"comedy, drama",Hong Jong-chan,"Ko Hyun-jung, Youn Yuh-jung, Na Moon-hee, Goh Doo-shim, Kim Hye-ja",8.2,TV-MA
+hyde,audience,something I can have on in the background,7,0.744,Flaked,2016,SHOW,"comedy, drama, romance",,"Will Arnett, David Sullivan, Ruth Kearney, George Basil",7.2,TV-MA
+hyde,audience,something I can have on in the background,8,0.7429,Love,2016,SHOW,"comedy, drama, romance",,"Gillian Jacobs, Paul Rust, Chris Witaske, Claudia O'Doherty",7.7,TV-MA
+hyde,audience,something I can have on in the background,9,0.742,Feel Good,2020,SHOW,"drama, comedy, romance",Luke Snellin,"Mae Martin, Charlotte Ritchie, Lisa Kudrow, Phil Burgers, Adrian Lukis",7.5,TV-MA
+hyde,audience,something I can have on in the background,10,0.7392,Girlfriends,2000,SHOW,"drama, comedy",,"Tracee Ellis Ross, Golden Brooks, Persia White, Reggie Hayes, Jill Marie Jones",7.2,TV-PG
+hyde,era,classic films from the 80s,1,0.7015,Dostana,1980,MOVIE,"drama, comedy, crime, romance, action",Raj Khosla,"Amitabh Bachchan, Shatrughan Sinha, Zeenat Aman, Prem Chopra, Amrish Puri",2.1,
+hyde,era,classic films from the 80s,2,0.6896,Saved by the Bell,1989,SHOW,"family, comedy, romance",,"Mark-Paul Gosselaar, Mario López, Dustin Diamond, Lark Voorhies, Dennis Haskins",7.1,TV-G
+hyde,era,classic films from the 80s,3,0.6802,Once Upon a Time in America,1984,MOVIE,"crime, drama, european",Sergio Leone,"Robert De Niro, James Woods, Elizabeth McGovern, Joe Pesci, Tuesday Weld",8.3,R
+hyde,era,classic films from the 80s,4,0.6766,Seinfeld,1989,SHOW,comedy,,"Jerry Seinfeld, Jason Alexander, Michael Richards, Julia Louis-Dreyfus",8.9,TV-PG
+hyde,era,classic films from the 80s,5,0.6758,Disco Dancer,1982,MOVIE,"drama, romance",Babbar Subhash,"Mithun Chakraborty, Kim, Rajesh Khanna, Om Shivpuri, Karan Razdan",6.4,
+hyde,era,classic films from the 80s,6,0.6728,Christine,1983,MOVIE,"horror, thriller, european",John Carpenter,"Keith Gordon, John Stockwell, Alexandra Paul, Robert Prosky, Harry Dean Stanton",6.7,R
+hyde,era,classic films from the 80s,7,0.6707,Too Young The Hero,1988,MOVIE,"drama, war",Buzz Kulik,"Ricky Schroder, Debra Mooney, Mary-Louise Parker, Jon DeVries",6.7,
+hyde,era,classic films from the 80s,8,0.6689,When Harry Met Sally...,1989,MOVIE,"comedy, romance, drama",Rob Reiner,"Billy Crystal, Meg Ryan, Carrie Fisher, Bruno Kirby, Steven Ford",7.7,R
+hyde,era,classic films from the 80s,9,0.6665,National Lampoon's Christmas Vacation,1989,MOVIE,"comedy, european",Jeremiah S. Chechik,"Chevy Chase, Beverly D'Angelo, Juliette Lewis, Johnny Galecki, John Randolph",7.5,PG-13
+hyde,era,classic films from the 80s,10,0.6664,Whispers,1980,MOVIE,documentation,Maroun Bagdadi,Nadia Tueni,7.8,
+hyde,era,good comedies from the 90s,1,0.7153,Dumb and Dumber,1994,MOVIE,comedy,Peter Farrelly,"Jim Carrey, Jeff Daniels, Lauren Holly, Teri Garr, Charles Rocket",7.3,PG-13
+hyde,era,good comedies from the 90s,2,0.6993,Bill Hicks: Revelations,1993,MOVIE,"comedy, documentation",Chris Bould,Bill Hicks,8.5,
+hyde,era,good comedies from the 90s,3,0.6991,Sinbad: Nothin' but the Funk,1998,MOVIE,"comedy, documentation",Chuck Vinson,Sinbad,6.3,
+hyde,era,good comedies from the 90s,4,0.6989,Big Daddy,1999,MOVIE,"drama, comedy, european",Dennis Dugan,"Adam Sandler, Joey Lauren Adams, Jon Stewart, Cole Sprouse, Dylan Sprouse",6.4,PG-13
+hyde,era,good comedies from the 90s,5,0.695,Sam Kinison: Family Entertainment Hour,1991,MOVIE,comedy,Walter C. Miller,"Sam Kinison, Arthur Eckdahl, Randy Hansen, Paul Henderson, Ice-T",,
+hyde,era,good comedies from the 90s,6,0.6899,Sinbad: Afros and Bellbottoms,1993,MOVIE,"comedy, documentation",Debbie Allen,Sinbad,7.8,PG-13
+hyde,era,good comedies from the 90s,7,0.6839,Bill Hicks: Relentless,1992,MOVIE,comedy,Chris Bould,Bill Hicks,,
+hyde,era,good comedies from the 90s,8,0.6824,Tim Allen: Rewires America,1991,MOVIE,"comedy, documentation",Ellen Brown,Tim Allen,6.0,PG
+hyde,era,good comedies from the 90s,9,0.6818,3 Ninjas Kick Back,1994,MOVIE,"comedy, family, action, sport",Charles T. Kanganis,"Victor Wong, Max Elliott Slade, Sean Fox, J. Evan Bonifant, Caroline Junko King",4.5,PG
+hyde,era,good comedies from the 90s,10,0.6788,Sam Kinison: Live in Vegas,1991,MOVIE,"comedy, music, documentation",,Sam Kinison,6.6,
+hyde,format,a long series I can binge this weekend,1,0.7285,Travelers,2016,SHOW,"scifi, thriller, drama",,"Eric McCormack, MacKenzie Porter, Nesta Cooper, Jared Abrahamson, Reilly Dolman",8.0,TV-MA
+hyde,format,a long series I can binge this weekend,2,0.6994,DC's Legends of Tomorrow,2016,SHOW,"drama, action, scifi",,"Caity Lotz, Tala Ashe, Jes Macallan, Olivia Swann, Adam Tsekhman",6.8,TV-14
+hyde,format,a long series I can binge this weekend,3,0.6917,Manifest,2018,SHOW,"drama, thriller, scifi",,"Melissa Roxburgh, Parveen Kaur, Josh Dallas, Luna Blaise, Athena Karkanis",7.1,TV-14
+hyde,format,a long series I can binge this weekend,4,0.6892,Relatable,2018,SHOW,comedy,,,,
+hyde,format,a long series I can binge this weekend,5,0.6867,Once Upon a Time... Happily Never After,2022,SHOW,"scifi, comedy, fantasy",Manolo Caro,"Sebastián Yatra, Rossy de Palma, Asier Etxeandia, Daniela Vega, Mariana Treviño",5.4,TV-MA
+hyde,format,a long series I can binge this weekend,6,0.6813,Unchained fate,2016,SHOW,"scifi, drama",,"Lenna Lim, Jack Tan, Agnes Wang, Allan Toh Wei Lun, Mandy Chen",,TV-14
+hyde,format,a long series I can binge this weekend,7,0.6805,The Hollow,2018,SHOW,"comedy, scifi, animation, drama, family",,"Ashleigh Ball, Connor Parnall, Adrian Petriw, Alex Barima, Diana Kaarina",7.1,TV-Y7
+hyde,format,a long series I can binge this weekend,8,0.6772,No Tomorrow,2016,SHOW,"comedy, drama, romance, thriller",,"Tori Anderson, Joshua Sasse, Jesse Rath, Amy Pietz, Sarayu Blue",7.1,TV-14
+hyde,format,a long series I can binge this weekend,9,0.6771,Justin Time,2011,SHOW,"action, animation, comedy, family",,"Gage Munroe, Jenna Warren, Scott McCord",6.0,TV-Y
+hyde,format,a long series I can binge this weekend,10,0.6766,Wizards: Tales of Arcadia,2020,SHOW,"action, comedy, scifi, animation",,"Lena Headey, Alfred Molina, Colin O'Donoghue, Emile Hirsch, Stephanie Beatriz",,TV-Y7
+hyde,format,just a mini-series,1,0.7515,The Stranger,2020,SHOW,"thriller, crime, drama",,"Richard Armitage, Siobhan Finneran, Jennifer Saunders, Hannah John-Kamen, Paul Kaye",7.3,TV-MA
+hyde,format,just a mini-series,2,0.7483,The Truth,2008,SHOW,"thriller, drama",,,,TV-14
+hyde,format,just a mini-series,3,0.7437,Secret City,2016,SHOW,"war, thriller",,"Anna Torv, Andrew McFarlane, Marcus Graham, Justin Smith, Aleks Mikic",7.4,TV-MA
+hyde,format,just a mini-series,4,0.743,"Web of Make Believe: Death, Lies and the Internet",2022,SHOW,"crime, documentation",,,6.1,TV-MA
+hyde,format,just a mini-series,5,0.7409,Paranoid,2016,SHOW,"thriller, crime, drama, european",,"Indira Varma, Robert Glenister, Neil Stuke, Christiane Paul, Lesley Sharp",6.6,
+hyde,format,just a mini-series,6,0.7369,Last One Standing,2019,SHOW,"thriller, drama, scifi",,,6.8,
+hyde,format,just a mini-series,7,0.7362,Anatomy of a Scandal,2022,SHOW,"drama, thriller",,"Sienna Miller, Rupert Friend, Michelle Dockery, Naomi Scott, Josette Simon",7.0,TV-MA
+hyde,format,just a mini-series,8,0.7342,Two Summers,2022,SHOW,"thriller, drama",,"Louise Bergez, Marieke Anthoni, Vincent Van Sande, Inge Paulussen, Herwig Ilegems",6.8,TV-PG
+hyde,format,just a mini-series,9,0.7332,Dark,2017,SHOW,"scifi, crime, drama, thriller",,"Louis Hofmann, Karoline Eichhorn",8.7,TV-MA
+hyde,format,just a mini-series,10,0.7324,The Truth Seekers,2016,SHOW,"drama, action",,"Chen Hanwei, Rebecca Lim, Desmond Tan, Yûsuke Fukuchi",7.1,TV-MA
+hyde,similarity,if I liked Breaking Bad,1,0.7572,How to Sell Drugs Online (Fast),2019,SHOW,"comedy, crime, drama, romance",,"Maximilian Mundt, Lena Klenke, Danilo Kamperidis, Damian Hardung, Leonie Wesselow",7.9,TV-MA
+hyde,similarity,if I liked Breaking Bad,2,0.732,How to Fix a Drug Scandal,2020,SHOW,"documentation, crime",Erin Lee Carr,"Luke Ryan, Shannon O'Neill, Scott Allen, Shawn Musgrave, Paul Solotaroff",7.0,TV-MA
+hyde,similarity,if I liked Breaking Bad,3,0.7274,Breaking Bad,2008,SHOW,"drama, crime, thriller",,"Bryan Cranston, Aaron Paul, Anna Gunn, Dean Norris, Jonathan Banks",9.5,TV-MA
+hyde,similarity,if I liked Breaking Bad,4,0.7212,The Business of Drugs,2020,SHOW,"documentation, crime",,Amaryllis Fox,7.2,TV-MA
+hyde,similarity,if I liked Breaking Bad,5,0.7182,The Pharmacist,2020,SHOW,"documentation, crime","Jenner Furst, Julia Willoughby Nason",Dan Schneider,7.7,TV-MA
+hyde,similarity,if I liked Breaking Bad,6,0.7135,El Chema,2016,SHOW,"crime, action",,"Mauricio Ochmann, Julio Bracho, Itatí Cantoral, Fernando Noriega, Arcelia Ramírez",6.9,TV-MA
+hyde,similarity,if I liked Breaking Bad,7,0.7118,The Cartel,2008,SHOW,"action, drama, crime, thriller, comedy",,,8.0,TV-MA
+hyde,similarity,if I liked Breaking Bad,8,0.7116,Dope,2017,SHOW,"documentation, crime, war, thriller, comedy, drama",Rob VanAlkemade,,7.3,TV-MA
+hyde,similarity,if I liked Breaking Bad,9,0.71,Cocaine Cowboys: The Kings of Miami,2021,SHOW,"documentation, crime, history",Billy Corben,,7.1,TV-MA
+hyde,similarity,if I liked Breaking Bad,10,0.7064,Pablo Escobar: The Drug Lord,2012,SHOW,"crime, drama, thriller, history",,"Andrés Parra, Angie Cepeda, Vicky Hernández, Nicolas Montero, Marcela Gallego",8.4,TV-14
+hyde,similarity,movies in the same vein as The Godfather,1,0.7501,GoodFellas,1990,MOVIE,"drama, crime",Martin Scorsese,"Ray Liotta, Robert De Niro, Joe Pesci, Lorraine Bracco, Paul Sorvino",8.7,R
+hyde,similarity,movies in the same vein as The Godfather,2,0.7337,A Family,2021,MOVIE,"crime, drama",Michihito Fujii,"Go Ayano, Hiroshi Tachi, Machiko Ono, Yukiya Kitamura, Hayato Ichihara",7.0,R
+hyde,similarity,movies in the same vein as The Godfather,3,0.7248,Brother's Shadow,2006,MOVIE,drama,Todd S. Yellin,"Scott Cohen, Judd Hirsch",6.1,
+hyde,similarity,movies in the same vein as The Godfather,4,0.7162,Family Blood,2018,MOVIE,"thriller, horror, drama",Sonny Mallhi,"Vinessa Shaw, James Ransone, Colin Ford, Ajiona Alexus, Carson Meyer",4.2,
+hyde,similarity,movies in the same vein as The Godfather,5,0.7122,The Departed,2006,MOVIE,"drama, thriller, crime, action",Martin Scorsese,"Jack Nicholson, Leonardo DiCaprio, Matt Damon, Mark Wahlberg, Vera Farmiga",8.5,R
+hyde,similarity,movies in the same vein as The Godfather,6,0.712,Once Upon a Time in America,1984,MOVIE,"crime, drama, european",Sergio Leone,"Robert De Niro, James Woods, Elizabeth McGovern, Joe Pesci, Tuesday Weld",8.3,R
+hyde,similarity,movies in the same vein as The Godfather,7,0.7111,The Ruthless,2019,MOVIE,"crime, drama, european",Renato De Maria,"Riccardo Scamarcio, Sara Serraiocco, Alessio Praticò, Alessandro Tedeschi, Marie-Ange Casta",6.2,
+hyde,similarity,movies in the same vein as The Godfather,8,0.7056,The Irishman,2019,MOVIE,"crime, drama, history, thriller",Martin Scorsese,"Robert De Niro, Al Pacino, Joe Pesci, Stephen Graham, Ray Romano",7.8,R
+hyde,similarity,movies in the same vein as The Godfather,9,0.7032,Doing Hard Time,2004,MOVIE,"action, crime, drama",Preston A. Whitmore II,"Boris Kodjoe, Michael Kenneth Williams, Sticky Fingaz, Giancarlo Esposito, Steven Bauer",,R
+hyde,similarity,movies in the same vein as The Godfather,10,0.7006,Cut Throat City,2020,MOVIE,"thriller, drama, action, crime",RZA,"Shameik Moore, Demetrius Shipp Jr., Denzel Whitaker, Keean Johnson, Kat Graham",4.8,R
+hyde,negative,a comedy that isn't crude or raunchy,1,0.7548,The Last Laugh,2019,MOVIE,comedy,Greg Pritikin,"Chevy Chase, Richard Dreyfuss, Andie MacDowell, Kate Micucci, Chris Parnell",5.6,
+hyde,negative,a comedy that isn't crude or raunchy,2,0.7456,A Stand Worthy of Men,2021,MOVIE,"drama, comedy",,,7.2,
+hyde,negative,a comedy that isn't crude or raunchy,3,0.7175,The Fundamentals of Caring,2016,MOVIE,"comedy, drama",Rob Burnett,"Paul Rudd, Craig Roberts, Selena Gomez, Jennifer Ehle, Megan Ferguson",7.3,R
+hyde,negative,a comedy that isn't crude or raunchy,4,0.7139,Other People,2016,MOVIE,"drama, comedy",Chris Kelly,"Jesse Plemons, Molly Shannon, Bradley Whitford, Maude Apatow, Madisen Beaty",6.8,
+hyde,negative,a comedy that isn't crude or raunchy,5,0.7118,Hometown Holiday,2018,MOVIE,"comedy, drama, romance",Justin G. Dyck,"Bradley Hamilton, Kevin McGarry, Sarah Troyer, Samantha Gracie, Mishael Morgan",5.0,
+hyde,negative,a comedy that isn't crude or raunchy,6,0.7109,True: Friendship Day,2020,MOVIE,"animation, family","Todd Kauffman, Mark Thornton","Michela Luci, Anna Claire Bartlam, Julie Lemieux, Jamie Watson, Nicolas Aqui",6.9,
+hyde,negative,a comedy that isn't crude or raunchy,7,0.7091,Ordinary World,2016,MOVIE,"comedy, drama, family, music",Lee Kirk,"Billie Joe Armstrong, Fred Armisen, Judy Greer, Selma Blair, Chris Messina",5.5,
+hyde,negative,a comedy that isn't crude or raunchy,8,0.7088,Buddies,2013,MOVIE,"drama, comedy, action, documentation, european",Marcelo Galvão,"Ariel Goldenberg, Breno Viola, Rita Pokk, Lima Duarte, Rui Unas",6.5,
+hyde,negative,a comedy that isn't crude or raunchy,9,0.7082,Take the 10,2017,MOVIE,comedy,Chester Tam,"Josh Peck, Tony Revolori, Stella Maeve, Andy Samberg, Kevin Corrigan",4.7,
+hyde,negative,a comedy that isn't crude or raunchy,10,0.7078,Charming,2018,MOVIE,"comedy, family, fantasy, music, animation, action",Ross Venokur,"Wilmer Valderrama, Demi Lovato, Ashley Tisdale, Avril Lavigne, G.E.M.",5.6,
+hyde,negative,action movie but nothing too gory,1,0.7642,Chaos,2005,MOVIE,"crime, drama, action, thriller, european",Tony Giglio,"Jason Statham, Ryan Phillippe, Wesley Snipes, Henry Czerny, Justine Waddell",6.4,R
+hyde,negative,action movie but nothing too gory,2,0.755,Wild Card,2015,MOVIE,"action, thriller, crime, drama",Simon West,"Jason Statham, Michael Angarano, Dominik Garcia, Milo Ventimiglia, Hope Davis",5.6,R
+hyde,negative,action movie but nothing too gory,3,0.7488,Edge of Fear,2018,MOVIE,"action, thriller, crime",Bobby Roth,"Jodi Lyn O'Keefe, Robert Patrick, Robert Knepper, Amaury Nolasco, Rockmond Dunbar",4.4,R
+hyde,negative,action movie but nothing too gory,4,0.7419,Security,2017,MOVIE,"thriller, action, crime, european",Alain Desrochers,"Antonio Banderas, Ben Kingsley, Liam McIntyre, Chad Lindberg, Gabriella Wright",5.7,R
+hyde,negative,action movie but nothing too gory,5,0.7398,Fistful of Vengeance,2022,MOVIE,"fantasy, action, crime, drama",Roel Reiné,"Iko Uwais, Lewis Tan, Jason Tobin, Joseph Angelo, Rhatha Phongam",4.4,R
+hyde,negative,action movie but nothing too gory,6,0.7391,Extraction,2020,MOVIE,"crime, drama, action, thriller",Sam Hargrave,"Chris Hemsworth, Rudhraksh Jaiswal, Randeep Hooda, Golshifteh Farahani, Pankaj Tripathi",6.7,R
+hyde,negative,action movie but nothing too gory,7,0.7384,Close,2019,MOVIE,"action, thriller, drama",Vicky Jewson,"Noomi Rapace, Sophie Nélisse, Indira Varma, Eoin Macken, Akin Gazi",5.7,R
+hyde,negative,action movie but nothing too gory,8,0.7384,Triple Frontier,2019,MOVIE,"thriller, action, crime, drama",J.C. Chandor,"Ben Affleck, Oscar Isaac, Charlie Hunnam, Garrett Hedlund, Pedro Pascal",6.4,R
+hyde,negative,action movie but nothing too gory,9,0.7372,Cut Throat City,2020,MOVIE,"thriller, drama, action, crime",RZA,"Shameik Moore, Demetrius Shipp Jr., Denzel Whitaker, Keean Johnson, Kat Graham",4.8,R
+hyde,negative,action movie but nothing too gory,10,0.7366,Rogue Warfare: Death of a Nation,2020,MOVIE,"war, action",Mike Gunther,"Stephen Lang, Chris Mulkey, Will Yun Lee, Rory Markham, Katie Keene",3.3,R
