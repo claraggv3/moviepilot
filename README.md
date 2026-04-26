@@ -6,7 +6,11 @@ An agentic movie recommendation chatbot. Ask it anything — trending films, Net
 
 ## Prerequisites
 
-- **Python 3.11 or newer** — check with `python3 --version`
+- **Python 3.11** — some dependencies don't support 3.12+ yet. Install via [python.org](https://www.python.org/downloads/) or with pyenv:
+  ```bash
+  brew install pyenv
+  pyenv install 3.11
+  ```
 - **Poetry** — install with:
   ```bash
   curl -sSL https://install.python-poetry.org | python3 -
@@ -22,8 +26,12 @@ An agentic movie recommendation chatbot. Ask it anything — trending films, Net
 ```bash
 git clone <repo-url>
 cd cinepilot
+poetry env use python3.11
 poetry install
 ```
+
+> **Using Python 3.12 or newer?** Run `poetry env use python3.11` before `poetry install` to pin the virtual environment to 3.11. If `python3.11` isn't found, install it first with `brew install python@3.11` (Mac) or via [python.org](https://www.python.org/downloads/).
+
 
 ### 2. Get API keys
 
