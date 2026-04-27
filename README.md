@@ -89,6 +89,16 @@ You only need to do this once. The index is saved to `data/chroma/`.
 
 ## Usage
 
+### Web UI (recommended)
+
+```bash
+poetry run moviepilot-ui
+```
+
+Opens automatically at `http://localhost:8501` in your browser. Type your question and press Enter.
+
+### CLI (alternative)
+
 ```bash
 poetry run chatbot chat
 ```
