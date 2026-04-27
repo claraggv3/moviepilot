@@ -117,7 +117,7 @@ Two commands exposed via Typer:
 
 ### `chat`
 ```
-cinepilot chat [--thread-id TEXT]
+moviepilot chat [--thread-id TEXT]
 ```
 - Generates a UUID thread_id if `--thread-id` is omitted (new session)
 - `--thread-id` resumes a previous conversation from the SQLite checkpoint
@@ -126,7 +126,7 @@ cinepilot chat [--thread-id TEXT]
 
 ### `build-collection`
 ```
-cinepilot build-collection [--titles PATH] [--credits PATH] [--chroma-path TEXT] [--force]
+moviepilot build-collection [--titles PATH] [--credits PATH] [--chroma-path TEXT] [--force]
 ```
 Convenience wrapper around the retrieval pipeline — loads CSVs, builds the ChromaDB collection, reports count and timing.
 

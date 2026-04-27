@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cinepilot"
+name = "moviepilot"
 version = "0.1.0"
 description = "Agentic movie recommendation chatbot with RAG"
 authors = ["Clara"]

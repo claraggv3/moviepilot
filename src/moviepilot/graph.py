@@ -27,7 +27,7 @@ def _pick_next(state: ChatState) -> str:
 
 def build_graph(checkpointer: BaseCheckpointSaver) -> Any:
     """
-    Build and compile the CinePilot state graph.
+    Build and compile the MoviePilot state graph.
 
     Node layout:
         route → [trending | netflix | refusal] → END

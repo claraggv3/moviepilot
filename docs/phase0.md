@@ -9,7 +9,7 @@ Set up the full project skeleton: dependency management, environment configurati
 ## Files created
 
 ```
-cinepilot/
+moviepilot/
 ├── pyproject.toml                        # project definition + all dependencies
 ├── .gitignore                            # excludes data, secrets, caches
 ├── .env.example                          # documents every config variable

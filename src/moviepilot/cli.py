@@ -9,7 +9,7 @@ from langchain_core.messages import HumanMessage
 
 from moviepilot.config import configure_logging
 
-app = typer.Typer(add_completion=False, help="CinePilot — movie recommendation chatbot")
+app = typer.Typer(add_completion=False, help="MoviePilot — movie recommendation chatbot")
 
 
 def _run(coro):

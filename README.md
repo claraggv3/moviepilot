@@ -1,4 +1,4 @@
-# CinePilot
+# MoviePilot
 
 An agentic movie recommendation chatbot. Ask it anything — trending films, Netflix picks by genre/mood/director, or follow-up questions like "something shorter" — and it answers from real data without making up titles.
 
@@ -25,7 +25,7 @@ An agentic movie recommendation chatbot. Ask it anything — trending films, Net
 
 ```bash
 git clone <repo-url>
-cd cinepilot
+cd moviepilot
 poetry env use python3.11
 poetry install
 ```
