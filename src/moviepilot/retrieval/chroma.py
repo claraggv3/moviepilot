@@ -159,6 +159,8 @@ Return a JSON object with these fields:
 - media_type: "MOVIE" if the query clearly wants a film, "SHOW" if clearly a series/show/TV. Null if unspecified or ambiguous.
 - decade_start: First year of the decade if a specific era is mentioned (e.g. "80s" → 1980, "90s" → 1990). Null if not specified.
 - decade_end: Last year of the decade (e.g. "80s" → 1989, "90s" → 1999). Null if not specified.
+- runtime_max: Maximum runtime in minutes. ONLY set when the user EXPLICITLY requests something short or states a maximum duration. Trigger words: "short film", "under X minutes", "quick watch", "short episodes", "half-hour show", "under an hour". For movies set to the stated limit (default 90 if no number given). For series set to episode duration limit (default 30). Do NOT infer from genre names — "drama", "thriller", "comedy" are NOT runtime signals. Null if not explicitly stated.
+- runtime_min: Minimum runtime in minutes. ONLY set when the user EXPLICITLY requests something long or states a minimum duration. Trigger words: "long film", "epic", "all evening", "long episodes", "hour-long episodes", "binge". For movies set to 120 (default). For series set to episode duration (default 45). Do NOT infer from genre names — "drama", "thriller", "prestige" are NOT runtime signals. Null if not explicitly stated.
 
 Query: {query}"""
 
@@ -170,6 +172,8 @@ class QueryAnalysis(BaseModel):
     media_type: Literal["MOVIE", "SHOW"] | None = None
     decade_start: int | None = None
     decade_end: int | None = None
+    runtime_max: int | None = None
+    runtime_min: int | None = None
 
 
 def analyze_query(query: str, chat_model) -> QueryAnalysis:
@@ -179,7 +183,7 @@ def analyze_query(query: str, chat_model) -> QueryAnalysis:
 
 
 def _build_where(analysis: QueryAnalysis) -> dict | None:
-    """Build ChromaDB metadata `where` filter from type/decade constraints only."""
+    """Build ChromaDB metadata `where` filter from type/decade/runtime constraints."""
     clauses: list[dict] = []
     if analysis.media_type:
         clauses.append({"type": analysis.media_type})
@@ -187,6 +191,10 @@ def _build_where(analysis: QueryAnalysis) -> dict | None:
         clauses.append({"release_year": {"$gte": analysis.decade_start}})
     if analysis.decade_end is not None:
         clauses.append({"release_year": {"$lte": analysis.decade_end}})
+    if analysis.runtime_max is not None:
+        clauses.append({"runtime": {"$lte": analysis.runtime_max}})
+    if analysis.runtime_min is not None:
+        clauses.append({"runtime": {"$gte": analysis.runtime_min}})
     if not clauses:
         return None
     return clauses[0] if len(clauses) == 1 else {"$and": clauses}
@@ -249,7 +257,8 @@ def hyde_search(
     query: str,
     chat_model,
     n_results: int | None = None,
-) -> list[ScoredDocument]:
+    return_analysis: bool = False,
+) -> list[ScoredDocument] | tuple[list[ScoredDocument], QueryAnalysis]:
     """
     HyDE retrieval with LLM-extracted constraints applied as post-filters.
 
@@ -277,6 +286,8 @@ def hyde_search(
         country=analysis.country_code,
         media_type=analysis.media_type,
         decade=(analysis.decade_start, analysis.decade_end),
+        runtime_max=analysis.runtime_max,
+        runtime_min=analysis.runtime_min,
     )
 
     where = _build_where(analysis)
@@ -326,4 +337,7 @@ def hyde_search(
             lambda d: code in d.metadata.get("production_countries", ""),
         )
 
-    return candidates[:k]
+    result = candidates[:k]
+    if return_analysis:
+        return result, analysis
+    return result
