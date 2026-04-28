@@ -3,8 +3,8 @@ Evaluate retrieval quality across a fixed query set.
 
 Usage:
     poetry run python scripts/eval_retrieval.py --label semantic
-    poetry run python scripts/eval_retrieval.py --label hybrid   (after P2-4)
-    poetry run python scripts/eval_retrieval.py --label hyde     (after P2-5)
+    poetry run python scripts/eval_retrieval.py --label hyde
+    poetry run python scripts/eval_retrieval.py --label hyde --queries eval/queries_expanded.csv
 
 Results are saved to:
     eval/results/{label}.md   — human-readable with full descriptions
@@ -23,16 +23,13 @@ from moviepilot.retrieval.chroma import load_collection, semantic_search, hyde_s
 
 configure_logging()
 
-QUERIES_PATH = Path("eval/queries.csv")
+DEFAULT_QUERIES_PATH = Path("eval/queries.csv")
 
 
-def load_queries() -> list[tuple[str, str]]:
-    """Load (category, query) pairs from eval/queries.csv."""
-    with open(QUERIES_PATH, encoding="utf-8") as f:
+def load_queries(path: Path) -> list[tuple[str, str]]:
+    """Load (category, query) pairs from a CSV file."""
+    with open(path, encoding="utf-8") as f:
         return [(row["category"], row["query"]) for row in csv.DictReader(f)]
-
-
-QUERIES = load_queries()
 
 N_RESULTS = 10
 
@@ -64,8 +61,8 @@ def run_semantic(col, query: str) -> list:
     return semantic_search(col, query, n_results=N_RESULTS)
 
 
-def run_hyde(col, chat_model, query: str) -> list:
-    return hyde_search(col, query, chat_model, n_results=N_RESULTS)
+def run_hyde(col, chat_model, query: str):
+    return hyde_search(col, query, chat_model, n_results=N_RESULTS, return_analysis=True)
 
 
 def main() -> None:
@@ -73,10 +70,17 @@ def main() -> None:
     parser.add_argument(
         "--label",
         required=True,
-        choices=["semantic", "hybrid", "hyde"],
+        choices=["semantic", "hyde"],
         help="Label for the output file: eval/results/{label}.md",
     )
+    parser.add_argument(
+        "--queries",
+        default=str(DEFAULT_QUERIES_PATH),
+        help="Path to a queries CSV (category,query). Defaults to eval/queries.csv.",
+    )
     args = parser.parse_args()
+
+    queries = load_queries(Path(args.queries))
 
     out_dir = Path("eval/results")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -96,16 +100,17 @@ def main() -> None:
         f"# Retrieval eval — {args.label}",
         f"",
         f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}  ",
-        f"Strategy: {args.label} | n_results: {N_RESULTS}",
+        f"Strategy: {args.label} | n_results: {N_RESULTS} | queries: {args.queries}",
         f"",
         "---",
         "",
     ]
 
     csv_rows: list[dict] = []
+    analysis_rows: list[dict] = []
 
     current_category = None
-    for category, query in QUERIES:
+    for category, query in queries:
         if category != current_category:
             current_category = category
             lines.append(f"## {category.replace('_', ' ').title()}")
@@ -113,13 +118,40 @@ def main() -> None:
 
         print(f"  {query}")
 
+        analysis = None
         if args.label == "semantic":
             results = run_semantic(col, query)
         else:
-            results = run_hyde(col, chat_model, query)
+            results, analysis = run_hyde(col, chat_model, query)
 
         lines.append(f"### \"{query}\"")
         lines.append("")
+
+        if analysis is not None:
+            lines.append(
+                f"**Analysis** — "
+                f"persons: `{analysis.persons or '—'}` | "
+                f"country: `{analysis.country_code or '—'}` | "
+                f"media_type: `{analysis.media_type or '—'}` | "
+                f"decade: `{analysis.decade_start}–{analysis.decade_end}` | "
+                f"runtime: `{analysis.runtime_min or '—'}–{analysis.runtime_max or '—'} min`"
+            )
+            lines.append("")
+            lines.append(f"> *HyDE doc:* {analysis.hyde_document}")
+            lines.append("")
+            analysis_rows.append({
+                "category": category,
+                "query": query,
+                "persons": "; ".join(analysis.persons),
+                "country_code": analysis.country_code or "",
+                "media_type": analysis.media_type or "",
+                "decade_start": analysis.decade_start if analysis.decade_start is not None else "",
+                "decade_end": analysis.decade_end if analysis.decade_end is not None else "",
+                "runtime_min": analysis.runtime_min if analysis.runtime_min is not None else "",
+                "runtime_max": analysis.runtime_max if analysis.runtime_max is not None else "",
+                "hyde_document": analysis.hyde_document,
+            })
+
         for i, doc in enumerate(results, 1):
             lines.append(_format_result(i, doc))
             m = doc.metadata
@@ -137,6 +169,7 @@ def main() -> None:
                 "actors": m.get("actors", ""),
                 "imdb_score": m.get("imdb_score", ""),
                 "age_certification": m.get("age_certification", ""),
+                "runtime": m.get("runtime", ""),
             })
         lines.append("---")
         lines.append("")
@@ -147,13 +180,25 @@ def main() -> None:
     csv_fields = [
         "label", "category", "query", "rank", "score",
         "title", "year", "type", "genres", "directors", "actors",
-        "imdb_score", "age_certification",
+        "imdb_score", "age_certification", "runtime",
     ]
     with csv_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=csv_fields)
         writer.writeheader()
         writer.writerows(csv_rows)
     print(f"Saved → {csv_path}")
+
+    if analysis_rows:
+        analysis_path = out_dir / f"{args.label}_analysis.csv"
+        analysis_fields = [
+            "category", "query", "persons", "country_code", "media_type",
+            "decade_start", "decade_end", "runtime_min", "runtime_max", "hyde_document",
+        ]
+        with analysis_path.open("w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=analysis_fields)
+            writer.writeheader()
+            writer.writerows(analysis_rows)
+        print(f"Saved → {analysis_path}")
 
 
 if __name__ == "__main__":
