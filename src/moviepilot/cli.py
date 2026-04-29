@@ -64,22 +64,6 @@ def chat(
     _run(_run_chat())
 
 
-@app.command()
-def eval(
-    judge: bool = typer.Option(False, "--judge", help="Run LLM-as-judge scoring (gpt-4o, ~$1)"),
-    cases: int = typer.Option(None, "--cases", help="Limit to first N cases (smoke test)"),
-) -> None:
-    """Run the end-to-end evaluation harness."""
-    import sys
-    from pathlib import Path as _Path
-    sys.path.insert(0, str(_Path(__file__).parent.parent.parent / "scripts"))
-
-    from run_eval import main as _eval_main
-
-    configure_logging()
-    _run(_eval_main(run_judge=judge, max_cases=cases))
-
-
 @app.command("build-collection")
 def build_collection_cmd(
     titles: Path = typer.Option(Path("data/kaggle/titles.csv"), help="Path to titles.csv"),

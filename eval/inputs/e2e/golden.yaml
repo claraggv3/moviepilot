@@ -1,0 +1,111 @@
+# MoviePilot — Golden Evaluation Set
+# 20 cases: 5 trending, 8 netflix, 4 routing edge cases, 3 refusal
+#
+# relevance_rule: defines what makes a retrieved document relevant for this query.
+#   Simple contains:  {field: directors, value: "Christopher Nolan"}
+#   Numeric range:    {field: release_year, gte: 1980, lte: 1989}
+#   All must match:   {all: [{field: genres, value: comedy}, {field: genres, value: romance}]}
+# Omit for cases where relevance is not objectively measurable (trending, mood, refusal).
+
+# ---------------------------------------------------------------------------
+# TRENDING — live TMDB data, no predicate (results change daily)
+# ---------------------------------------------------------------------------
+- id: t1
+  query: "What's popular right now?"
+  expected_route: trending
+
+- id: t2
+  query: "Best movies out this week"
+  expected_route: trending
+
+- id: t3
+  query: "Is there anything good at the cinema currently?"
+  expected_route: trending
+
+- id: t4
+  query: "What's everyone watching right now?"
+  expected_route: trending
+
+- id: t5
+  query: "Any good movies released lately?"
+  expected_route: trending
+
+# ---------------------------------------------------------------------------
+# NETFLIX — with relevance_rule (predicate-based, measurable)
+# ---------------------------------------------------------------------------
+- id: n1
+  query: "Show me Christopher Nolan films on Netflix"
+  expected_route: netflix
+  relevance_rule: {field: directors, value: "Christopher Nolan"}
+
+- id: n2
+  query: "Movies with Tom Hanks on Netflix"
+  expected_route: netflix
+  relevance_rule: {field: actors, value: "Tom Hanks"}
+
+- id: n3
+  query: "Recommend something in Korean"
+  expected_route: netflix
+  relevance_rule: {field: production_countries, value: "KR"}
+
+- id: n4
+  query: "Classic films from the 80s"
+  expected_route: netflix
+  relevance_rule: {field: release_year, gte: 1980, lte: 1989}
+
+- id: n5
+  query: "A good documentary"
+  expected_route: netflix
+  relevance_rule: {field: genres, value: "documentation"}
+
+- id: n6
+  query: "I want a horror movie"
+  expected_route: netflix
+  relevance_rule: {field: genres, value: "horror"}
+
+- id: n7
+  query: "Give me a romantic comedy"
+  expected_route: netflix
+  relevance_rule:
+    all:
+      - {field: genres, value: comedy}
+      - {field: genres, value: romance}
+
+- id: n8
+  query: "Something light and funny to cheer me up"
+  expected_route: netflix
+  relevance_rule: {field: genres, value: "comedy"}
+
+# ---------------------------------------------------------------------------
+# ROUTING EDGE CASES — ambiguous signals the router must handle correctly
+# ---------------------------------------------------------------------------
+- id: e1
+  query: "Best action movie out now?"
+  expected_route: trending
+
+- id: e2
+  query: "What's a good action movie?"
+  expected_route: netflix
+
+- id: e3
+  query: "A good sci-fi film recently released"
+  expected_route: trending
+
+- id: e4
+  query: "Good comedies from the 90s"
+  expected_route: netflix
+
+# ---------------------------------------------------------------------------
+# REFUSAL — off-topic, should never call retrieval
+# ---------------------------------------------------------------------------
+- id: r1
+  query: "What's the weather in Madrid?"
+  expected_route: refusal
+
+- id: r2
+  query: "Help me write a cover letter"
+  expected_route: refusal
+
+- id: r3
+  query: "What's 2 + 2?"
+  expected_route: refusal

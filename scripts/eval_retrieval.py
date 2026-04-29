@@ -2,13 +2,12 @@
 Evaluate retrieval quality across a fixed query set.
 
 Usage:
-    poetry run python scripts/eval_retrieval.py --label semantic
     poetry run python scripts/eval_retrieval.py --label hyde
-    poetry run python scripts/eval_retrieval.py --label hyde --queries eval/queries_expanded.csv
+    poetry run python scripts/eval_retrieval.py --label hyde --queries eval/inputs/retrieval/queries_expanded.csv
 
 Results are saved to:
-    eval/results/{label}.md   — human-readable with full descriptions
-    eval/results/{label}.csv  — one row per result, easy to diff across labels
+    eval/retrieval/{label}.md   — human-readable with full descriptions
+    eval/retrieval/{label}.csv  — one row per result, easy to diff across labels
 """
 
 from __future__ import annotations
@@ -23,7 +22,7 @@ from moviepilot.retrieval.chroma import load_collection, semantic_search, hyde_s
 
 configure_logging()
 
-DEFAULT_QUERIES_PATH = Path("eval/queries.csv")
+DEFAULT_QUERIES_PATH = Path("eval/inputs/retrieval/queries.csv")
 
 
 def load_queries(path: Path) -> list[tuple[str, str]]:
@@ -76,13 +75,13 @@ def main() -> None:
     parser.add_argument(
         "--queries",
         default=str(DEFAULT_QUERIES_PATH),
-        help="Path to a queries CSV (category,query). Defaults to eval/queries.csv.",
+        help="Path to a queries CSV (category,query). Defaults to eval/inputs/retrieval/queries.csv.",
     )
     args = parser.parse_args()
 
     queries = load_queries(Path(args.queries))
 
-    out_dir = Path("eval/results")
+    out_dir = Path("eval/outputs/retrieval")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{args.label}.md"
     csv_path = out_dir / f"{args.label}.csv"

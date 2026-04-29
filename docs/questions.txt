@@ -1,8 +1,0 @@
-What are the __init__.py files you need everywhere?
-How does pytest work?
-How do we map the TMDB genre IDs to the genres? How can we use them?
-
-
-
-Further:
-If the user has an account have their info in memory. What they lioked in the past etc.
