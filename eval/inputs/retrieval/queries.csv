@@ -8,7 +8,7 @@ named_actor,something with Cate Blanchett
 named_actor,movies with Meryl Streep
 named_actor,show with Pedro Pascal
 mood,something light and funny to cheer me up
-mood,I need a good cry, what should I watch?
+mood,"I need a good cry, what should I watch?"
 mood,something intense that'll keep me on edge
 mood,something comforting to watch when I'm sick
 mood,I want something mind-bending
@@ -35,8 +35,8 @@ audience,something I can have on in the background
 era,classic films from the 80s
 era,good comedies from the 90s
 format,a long series I can binge this weekend
-format,just a mini-series, nothing too long
-similarity,if I liked Breaking Bad, what should I watch?
+format,"just a mini-series, nothing too long"
+similarity,"if I liked Breaking Bad, what should I watch?"
 similarity,movies in the same vein as The Godfather
 negative,a comedy that isn't crude or raunchy
 negative,action movie but nothing too gory

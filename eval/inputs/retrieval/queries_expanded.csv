@@ -1,0 +1,103 @@
+category,query
+director_named,David Fincher movies
+director_named,Christopher Nolan films
+director_named,Bong Joon-ho films
+director_named,Quentin Tarantino movies
+director_named,Alfonso Cuarón films
+director_named,Spike Lee movies
+director_named,Wes Anderson films
+director_named,Ava DuVernay documentaries
+director_indirect,something by the director of Parasite
+director_indirect,films by the woman who directed Selma
+actor_named,movies with Tom Hanks
+actor_named,movies with Meryl Streep
+actor_named,show with Pedro Pascal
+actor_named,Leonardo DiCaprio films
+actor_named,movies with Idris Elba
+actor_named,Viola Davis movies
+actor_named,Adam Sandler films on Netflix
+actor_informal,something with Cate Blanchett
+actor_informal,anything with Scarlett Johansson
+actor_informal,show me something with Denzel
+genre_single,I want a horror movie
+genre_single,recommend me a western
+genre_single,a crime drama
+genre_single,an animated film
+genre_single,a science fiction movie
+genre_single,a romantic comedy
+genre_niche,recommend me a western
+genre_niche,a martial arts film
+genre_niche,a film noir
+genre_compound,a sci-fi horror film
+genre_compound,a romantic thriller
+genre_compound,an action comedy
+mood_positive,something light and funny to cheer me up
+mood_negative,I need a good cry what should I watch
+mood_intensity,something intense that'll keep me on edge
+mood_comfort,something comforting to watch when I'm sick
+mood_cognitive,I want something mind-bending
+era_decade,classic films from the 80s
+era_decade,a drama from the 2000s
+era_decade,good films from the 70s
+era_relative,something from the 90s I might have missed
+era_relative,a hidden gem from the early 2000s
+era_genre_combo,80s horror film
+era_genre_combo,90s crime thriller
+era_genre_combo,2000s romantic comedy
+era_genre_combo,70s drama
+country_explicit,any good Italian movies on Netflix
+country_explicit,a good Spanish film
+country_explicit,Indian cinema
+country_explicit,German thriller
+country_explicit,British comedy
+language_explicit,recommend something in Korean
+language_explicit,a good Japanese film
+language_explicit,something in Mandarin
+language_implicit,I want to watch something French
+language_implicit,show me something Brazilian
+topic_technical,movies about artificial intelligence
+topic_event,something about the financial crisis
+topic_event,a film set during World War II
+topic_emotional,a film about grief and loss
+topic_emotional,movies about immigration
+topic_scenario,survival in the wild
+topic_scenario,films about space exploration
+topic_format_combo,documentaries about climate change
+topic_format_combo,a documentary series about nature
+audience_children,something to watch with my 8-year-old
+audience_romantic,a movie for date night
+audience_passive,something I can have on in the background
+audience_family,a film to watch with my parents
+audience_family,something the whole family can watch
+format_movie,just a movie not a series
+format_series,a long series I can binge this weekend
+format_miniseries,just a mini-series nothing too long
+format_documentary,a good documentary
+runtime_short,a short film under 90 minutes
+runtime_short,a series with short episodes
+runtime_long,something I can watch all evening
+runtime_long,a drama with long episodes
+similarity_title,something like Inception
+similarity_title,movies in the same vein as The Godfather
+similarity_show,if I liked Breaking Bad what should I watch
+similarity_show,something like Narcos
+similarity_classic,a film like Casablanca
+quality_imdb,highly rated thrillers on Netflix
+quality_imdb,best reviewed drama series
+certification_family,something family-friendly rated for all ages
+certification_family,a children's film
+certification_adult,a mature R-rated film
+negative_genre,something not too violent I've had a rough day
+negative_genre,action movie but nothing too gory
+negative_tone,a comedy that isn't crude or raunchy
+combination_2param,spy thriller with action by Martin Scorsese
+combination_2param,Christopher Nolan mind-bending thriller
+combination_2param,Tom Hanks drama about friendship
+combination_2param,Korean crime thriller like Parasite
+combination_2param,French romantic comedy
+combination_2param,documentary about nature and wildlife
+combination_2param,an 80s Korean horror film
+combination_2param,a Japanese anime series
+combination_3param,a short French thriller from the 90s
+combination_3param,a 2000s Korean crime drama
+combination_3param,an 80s British sci-fi comedy

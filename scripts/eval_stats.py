@@ -19,209 +19,34 @@ MRR (Mean Reciprocal Rank) explanation:
   Shown here as the raw "1st rank" column — same information, more readable.
 
 Usage:
-    poetry run python scripts/eval_stats.py
+    poetry run python scripts/eval_stats.py --rules eval/inputs/retrieval/rules_expanded.py
+    poetry run python scripts/eval_stats.py --rules eval/inputs/retrieval/rules_base.py
+    poetry run python scripts/eval_stats.py --rules eval/inputs/retrieval/rules_expanded.py \\
+        --results-dir eval/retrieval
 """
 from __future__ import annotations
 
+import argparse
 import csv
+import importlib.util
+import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, Callable
 
-RESULTS_DIR = Path("eval/results")
 
 # ---------------------------------------------------------------------------
-# Relevance rules
+# Rules loading
 # ---------------------------------------------------------------------------
 
-def _has_director(name: str) -> Callable:
-    return lambda r: name in r.get("directors", "")
-
-def _has_actor(name: str) -> Callable:
-    return lambda r: name in r.get("actors", "")
-
-def _has_country(code: str) -> Callable:
-    return lambda r: code in r.get("production_countries", "")
-
-def _in_decade(start: int, end: int) -> Callable:
-    def rule(r: dict) -> bool:
-        y = r.get("year", "")
-        return bool(y) and start <= int(y) <= end
-    return rule
-
-def _has_genre(genre: str) -> Callable:
-    return lambda r: genre.lower() in r.get("genres", "").lower()
-
-def _has_genres(*genres: str) -> Callable:
-    return lambda r: all(g.lower() in r.get("genres", "").lower() for g in genres)
-
-def _in_decade_and_genre(start: int, end: int, genre: str) -> Callable:
-    decade_rule = _in_decade(start, end)
-    genre_rule = _has_genre(genre)
-    return lambda r: decade_rule(r) and genre_rule(r)
-
-def _has_media_type(t: str) -> Callable:
-    return lambda r: r.get("type", "").upper() == t.upper()
-
-def _has_certification(*certs: str) -> Callable:
-    cert_set = {c.upper() for c in certs}
-    return lambda r: r.get("age_certification", "").upper() in cert_set
-
-def _runtime_lte(minutes: int) -> Callable:
-    def rule(r: dict) -> bool:
-        rt = r.get("runtime")
-        return bool(rt) and int(rt) <= minutes
-    return rule
-
-def _runtime_gte(minutes: int) -> Callable:
-    def rule(r: dict) -> bool:
-        rt = r.get("runtime")
-        return bool(rt) and int(rt) >= minutes
-    return rule
-
-
-RELEVANCE_RULES: dict[str, Callable] = {
-    # --- director: named -------------------------------------------------------
-    "David Fincher movies":                         _has_director("David Fincher"),
-    "Christopher Nolan films":                      _has_director("Christopher Nolan"),
-    "Bong Joon-ho films":                           _has_director("Bong Joon-ho"),
-    "Quentin Tarantino movies":                     _has_director("Quentin Tarantino"),
-    "Alfonso Cuarón films":                         _has_director("Alfonso Cuarón"),
-    "Spike Lee movies":                             _has_director("Spike Lee"),
-    "Wes Anderson films":                           _has_director("Wes Anderson"),
-    "Ava DuVernay documentaries":                   _has_director("Ava DuVernay"),
-
-    # --- director: indirect (same relevance, harder query) ---------------------
-    "something by the director of Parasite":        _has_director("Bong Joon-ho"),
-    "films by the woman who directed Selma":        _has_director("Ava DuVernay"),
-
-    # --- actor: named ----------------------------------------------------------
-    "movies with Tom Hanks":                        _has_actor("Tom Hanks"),
-    "movies with Meryl Streep":                     _has_actor("Meryl Streep"),
-    "show with Pedro Pascal":                       _has_actor("Pedro Pascal"),
-    "Leonardo DiCaprio films":                      _has_actor("Leonardo DiCaprio"),
-    "movies with Idris Elba":                       _has_actor("Idris Elba"),
-    "Viola Davis movies":                           _has_actor("Viola Davis"),
-    "Adam Sandler films on Netflix":                _has_actor("Adam Sandler"),
-
-    # --- actor: informal -------------------------------------------------------
-    "something with Cate Blanchett":                _has_actor("Cate Blanchett"),
-    "anything with Scarlett Johansson":             _has_actor("Scarlett Johansson"),
-    "show me something with Denzel":                _has_actor("Denzel Washington"),
-
-    # --- genre: single ---------------------------------------------------------
-    "I want a horror movie":                        _has_genre("horror"),
-    "recommend me a western":                       _has_genre("western"),
-    "a crime drama":                                _has_genre("crime"),
-    "an animated film":                             _has_genre("animation"),
-    "a science fiction movie":                      _has_genre("scifi"),
-    "a romantic comedy":                            _has_genres("comedy", "romance"),
-
-    # --- genre: compound -------------------------------------------------------
-    "a sci-fi horror film":                         _has_genres("scifi", "horror"),
-    "a romantic thriller":                          _has_genres("romance", "thriller"),
-    "an action comedy":                             _has_genres("action", "comedy"),
-
-    # --- era -------------------------------------------------------------------
-    "classic films from the 80s":                   _in_decade(1980, 1989),
-    "good films from the 70s":                      _in_decade(1970, 1979),
-    "something from the 90s I might have missed":   _in_decade(1990, 1999),
-    "80s horror film":                              _in_decade_and_genre(1978, 1992, "horror"),
-    "90s crime thriller":                           _in_decade_and_genre(1990, 1999, "thriller"),
-    "70s drama":                                    _in_decade_and_genre(1970, 1979, "drama"),
-    "a drama from the 2000s":                       _in_decade_and_genre(2000, 2009, "drama"),
-    "2000s romantic comedy":                        lambda r: _in_decade(2000, 2009)(r) and _has_genres("comedy", "romance")(r),
-
-    # --- country / language ----------------------------------------------------
-    "any good Italian movies on Netflix":           _has_country("IT"),
-    "a good Spanish film":                          _has_country("ES"),
-    "Indian cinema":                                _has_country("IN"),
-    "German thriller":                              _has_country("DE"),
-    "British comedy":                               _has_country("GB"),
-    "recommend something in Korean":                _has_country("KR"),
-    "a good Japanese film":                         _has_country("JP"),
-    "something in Mandarin":                        _has_country("CN"),
-    "I want to watch something French":             _has_country("FR"),
-    "show me something Brazilian":                  _has_country("BR"),
-
-    # --- format / media type ---------------------------------------------------
-    "just a movie not a series":                    _has_media_type("MOVIE"),
-    "a long series I can binge this weekend":       _has_media_type("SHOW"),
-    "a good documentary":                           _has_genre("documentation"),
-    "documentary about nature and wildlife":        _has_genre("documentation"),
-    "a documentary series about nature":            lambda r: _has_genre("documentation")(r) and _has_media_type("SHOW")(r),
-
-    # --- runtime ---------------------------------------------------------------
-    "a short film under 90 minutes":               lambda r: _has_media_type("MOVIE")(r) and _runtime_lte(90)(r),
-    "a series with short episodes":                lambda r: _has_media_type("SHOW")(r)  and _runtime_lte(30)(r),
-    "something I can watch all evening":           _runtime_gte(120),
-    "a drama with long episodes":                  lambda r: _has_media_type("SHOW")(r)  and _runtime_gte(45)(r),
-
-    # --- certification ---------------------------------------------------------
-    "something family-friendly rated for all ages": _has_certification("G", "PG", "TV-G", "TV-Y", "TV-Y7", "TV-PG"),
-    "a children's film":                            _has_certification("G", "PG", "TV-G", "TV-Y", "TV-Y7"),
-    "a mature R-rated film":                        _has_certification("R", "TV-MA", "NC-17"),
-
-    # --- combination: 2 params (existing) --------------------------------------
-    "spy thriller with action by Martin Scorsese":  _has_director("Martin Scorsese"),
-    "Christopher Nolan mind-bending thriller":      _has_director("Christopher Nolan"),
-    "Tom Hanks drama about friendship":             _has_actor("Tom Hanks"),
-    "Korean crime thriller like Parasite":          _has_country("KR"),
-    "French romantic comedy":                       _has_country("FR"),
-
-    # --- combination: 2 params (new) ------------------------------------------
-    "an 80s Korean horror film":                    lambda r: _has_country("KR")(r) and _in_decade_and_genre(1978, 1992, "horror")(r),
-    "a Japanese anime series":                      lambda r: _has_country("JP")(r) and _has_genre("animation")(r) and _has_media_type("SHOW")(r),
-
-    # --- combination: 3 params -------------------------------------------------
-    "a short French thriller from the 90s":         lambda r: _has_country("FR")(r) and _has_genre("thriller")(r) and _in_decade(1990, 1999)(r),
-    "a 2000s Korean crime drama":                   lambda r: _has_country("KR")(r) and _has_genre("crime")(r) and _in_decade(2000, 2009)(r),
-    "an 80s British sci-fi comedy":                 lambda r: _has_country("GB")(r) and _has_genre("scifi")(r) and _in_decade(1980, 1989)(r),
-}
-
-SUBJECTIVE_QUERIES = {
-    # mood
-    "something light and funny to cheer me up",
-    "I need a good cry what should I watch",
-    "something intense that'll keep me on edge",
-    "something comforting to watch when I'm sick",
-    "I want something mind-bending",
-    # topic / theme
-    "movies about artificial intelligence",
-    "a film about grief and loss",
-    "survival in the wild",
-    "something about the financial crisis",
-    "documentaries about climate change",
-    "films about space exploration",
-    "movies about immigration",
-    "a film set during World War II",
-    # audience / context
-    "something to watch with my 8-year-old",
-    "a movie for date night",
-    "something I can have on in the background",
-    "a film to watch with my parents",
-    "something the whole family can watch",
-    # format / runtime (no objective filter available)
-    "just a mini-series nothing too long",
-    # genre: niche / subjective
-    "a martial arts film",
-    "a film noir",
-    # era: relative / discovery
-    "a hidden gem from the early 2000s",
-    # similarity
-    "something like Inception",
-    "movies in the same vein as The Godfather",
-    "something like Narcos",
-    "a film like Casablanca",
-    "if I liked Breaking Bad what should I watch",
-    # quality / rating (IMDB not used as filter)
-    "highly rated thrillers on Netflix",
-    "best reviewed drama series",
-    # negative preference
-    "something not too violent I've had a rough day",
-    "a comedy that isn't crude or raunchy",
-    "action movie but nothing too gory",
-}
+def load_rules(path: Path) -> tuple[dict[str, Callable], set[str]]:
+    scripts_dir = Path(__file__).parent
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    spec = importlib.util.spec_from_file_location("_rules", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.RELEVANCE_RULES, mod.SUBJECTIVE_QUERIES
 
 
 # ---------------------------------------------------------------------------
@@ -269,8 +94,8 @@ def count_relevant_in_corpus(rule: Callable, corpus: list[dict]) -> int:
 # CSV loading
 # ---------------------------------------------------------------------------
 
-def load_results(label: str) -> dict[str, list[dict]]:
-    path = RESULTS_DIR / f"{label}.csv"
+def load_results(results_dir: Path, label: str) -> dict[str, list[dict]]:
+    path = results_dir / f"{label}.csv"
     if not path.exists():
         return {}
     results: dict[str, list[dict]] = defaultdict(list)
@@ -312,6 +137,28 @@ def mrr(first_rank: int | None) -> float:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Compute retrieval quality metrics.")
+    parser.add_argument(
+        "--rules",
+        required=True,
+        help="Path to a rules Python file defining RELEVANCE_RULES and SUBJECTIVE_QUERIES.",
+    )
+    parser.add_argument(
+        "--results-dir",
+        default="eval/outputs/retrieval",
+        help="Directory containing result CSVs (default: eval/retrieval).",
+    )
+    args = parser.parse_args()
+
+    rules_path = Path(args.rules)
+    results_dir = Path(args.results_dir)
+
+    if not rules_path.exists():
+        print(f"Rules file not found: {rules_path}")
+        return
+
+    RELEVANCE_RULES, SUBJECTIVE_QUERIES = load_rules(rules_path)
+
     print("Loading corpus from ChromaDB...")
     corpus = load_corpus()
     lookup = build_title_lookup(corpus)
@@ -320,13 +167,13 @@ def main() -> None:
     corpus_counts = {q: count_relevant_in_corpus(r, corpus) for q, r in RELEVANCE_RULES.items()}
 
     labels = sorted(
-        p.stem for p in RESULTS_DIR.glob("*.csv")
+        p.stem for p in results_dir.glob("*.csv")
         if not p.stem.startswith("stats") and not p.stem.endswith("_analysis")
     )
-    all_results = {lab: load_results(lab) for lab in labels}
+    all_results = {lab: load_results(results_dir, lab) for lab in labels}
 
     if not all_results:
-        print("No eval CSVs found. Run eval_retrieval.py first.")
+        print(f"No eval CSVs found in {results_dir}. Run eval_retrieval.py first.")
         return
 
     # -----------------------------------------------------------------------
@@ -368,7 +215,6 @@ def main() -> None:
     W = 46  # query column width
     col_w = 28  # per-label column group width
 
-    # Header
     print(f"{'Query':<{W}} {'Corpus':>7}  " +
           "  ".join(f"{'── ' + lab.upper() + ' ──':^{col_w}}" for lab in labels))
     print(f"{'':^{W}} {'N':>7}  " +
@@ -396,7 +242,6 @@ def main() -> None:
 
     print("-" * (W + 9 + len(labels) * (col_w + 2)))
 
-    # Overall row
     n = len(stat_rows)
     total_line = f"{'TOTAL / MEAN (across ' + str(n) + ' queries)':<{W}} {'':>7}  "
     for lab in labels:
@@ -424,7 +269,6 @@ def main() -> None:
     metric_w = 42
     val_w = 12
 
-    # Header
     print(f"\n  {'Metric':<{metric_w}}" + "".join(f"{lab.upper():>{val_w}}" for lab in labels))
     print(f"  {'-' * metric_w}" + "".join(f"  {'─' * (val_w - 2)}" for _ in labels))
 
@@ -471,7 +315,8 @@ def main() -> None:
     # -----------------------------------------------------------------------
     # Save summary CSV
     # -----------------------------------------------------------------------
-    summary_path = RESULTS_DIR / "stats_summary.csv"
+    results_dir.mkdir(parents=True, exist_ok=True)
+    summary_path = results_dir / "stats_summary.csv"
     summary_fields = ["metric"] + labels
     summary_csv_rows = [
         {"metric": "total_hits@5",   **{s["label"]: f"{s['total_hits5']}/{s['total_max5']}"   for s in summary_rows}},
@@ -488,9 +333,9 @@ def main() -> None:
     print(f"Saved → {summary_path}")
 
     # -----------------------------------------------------------------------
-    # Save CSV
+    # Save stats CSV
     # -----------------------------------------------------------------------
-    out_path = RESULTS_DIR / "stats.csv"
+    out_path = results_dir / "stats.csv"
     csv_fields = ["query", "corpus_n"] + [
         f"{lab}_{m}" for lab in labels for m in ["hits@5", "hits@10", "R@10", "1st", "MRR"]
     ]
