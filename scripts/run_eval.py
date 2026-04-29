@@ -44,8 +44,8 @@ from moviepilot.retrieval.chroma import load_collection
 configure_logging()
 
 GOLDEN_PATH  = Path("eval/inputs/e2e/golden.yaml")
-RESULTS_PATH = Path("eval/results.json")
-SUMMARY_PATH = Path("eval/summary.md")
+RESULTS_PATH = Path("eval/outputs/e2e/results.json")
+SUMMARY_PATH = Path("eval/outputs/e2e/summary.md")
 
 
 _JUDGE_PROMPT = """\
