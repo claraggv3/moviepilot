@@ -1,0 +1,7 @@
+metric,hybrid,hyde,semantic
+total_hits@5,65/131,122/131,105/131
+total_hits@10,128/227,204/227,182/227
+recall@5_%,49.6,93.1,80.2
+recall@10_%,56.4,89.9,80.2
+mean_mrr,0.565,0.967,0.892
+mean_1st_rank,2.9,1.1,1.3
