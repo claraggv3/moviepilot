@@ -171,8 +171,8 @@ poetry run python scripts/run_eval.py --judge-only     # re-judge an existing re
 
 Outputs:
 
-- [`eval/results.json`](eval/results.json) — full per-case data (routes, retrieved context, response, judge runs).
-- [`eval/summary.md`](eval/summary.md) — aggregate scores, per-case table, notable failures with response excerpts.
+- [`eval/outputs/e2e/results.json`](eval/outputs/e2e/results.json) — full per-case data (routes, retrieved context, response, judge runs).
+- [`eval/outputs/e2e/summary.md`](eval/outputs/e2e/summary.md) — aggregate scores, per-case table, notable failures with response excerpts.
 
 ### Retrieval-only evaluation (optional)
 
